@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+body {
+    margin: 0;
+}
+footer {
+    background-color:  #004a99;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column; 
+    font-family: 'Montserrat', sans-serif;
+}
 
+footer h3 {
+    font-size: 30px;
+}
 
 .contact_us {
     width: 250px;
-    background-color: #004a99;
-    font-family: 'Montserrat', sans-serif;
     line-height: 25px;
     color: #ffffff;
 }
