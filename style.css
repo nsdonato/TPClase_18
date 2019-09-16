@@ -3,14 +3,29 @@ body {
     margin: 0;
 }
 footer {
-    background-color: #00428a;
+    background-color:#00428a;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    text-align: justify;
     display: flex;
-    flex-direction: column; 
-}
+    flex-direction: column;
 
 footer h3 {
     font-size: 30px;
+}
+
+.wayne {
+    height: 150px;
+    width: 100px;
+}
+
+.useful {
+    height: 150px;
+    width: 100px;
+}
+.pie {
+    background-color: #00428a;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
