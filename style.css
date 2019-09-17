@@ -10,11 +10,33 @@ footer {
     display: flex;
     flex-direction: column; 
     font-family: 'Montserrat', sans-serif;
-   
+       
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 20px;
+}
+.wayne {
+    height:50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.useful {
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.pie {
+    background-color: #00428a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact_us {
@@ -61,28 +83,7 @@ i {
     justify-content: flex-start;
 }
 
-.wayne {
-    height:50px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.useful {
-    height: 50px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.pie {
-    background-color: #00428a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .newsletter {
     width: 300px;
@@ -112,6 +113,7 @@ input[type="submit"]{
 
 .footer_principal{
     display: flex;
+    padding: 30px;
 }
 
 .footer_principal > div {
