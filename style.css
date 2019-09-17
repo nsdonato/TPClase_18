@@ -10,9 +10,10 @@ footer {
     display: flex;
     flex-direction: column; 
     font-family: 'Montserrat', sans-serif;
+   
 }
 
-footer h3 {
+h3 {
     font-size: 30px;
 }
 
@@ -66,18 +67,23 @@ i {
 }
 
 .wayne {
-    height: 150px;
-    width: 100px;
+    height:50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .useful {
-    height: 150px;
-    width: 100px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .pie {
     background-color: #00428a;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,4 +121,10 @@ input[type="submit"]{
 
 .footer_principal > div {
     flex-grow: 1;
+}
+
+@media (max-width:600px) {
+    .footer_principal {
+        display: block;
+    }
 }
