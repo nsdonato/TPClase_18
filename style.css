@@ -117,3 +117,9 @@ input[type="submit"]{
 .footer_principal > div {
     flex-grow: 1;
 }
+
+@media (max-width:600px) {
+    .footer_principal {
+        display: block;
+    }
+}
