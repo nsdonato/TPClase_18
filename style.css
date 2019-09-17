@@ -10,9 +10,10 @@ footer {
     display: flex;
     flex-direction: column; 
     font-family: 'Montserrat', sans-serif;
+   
 }
 
-footer h3 {
+h3 {
     font-size: 30px;
 }
 
@@ -67,13 +68,15 @@ i {
 }
 
 .useful {
-    height: 150px;
-    width: 100px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .pie {
     background-color: #00428a;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,3 +122,11 @@ ul {
     flex-direction: column;
     line-height: 30px;
 }
+
+@media (max-width:600px) {
+    .footer_principal {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
