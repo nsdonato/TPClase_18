@@ -14,24 +14,36 @@ footer {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 .wayne {
-    height:50px;
     width: 300px;
+    height: 250px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+   
 }
 
 .useful {
-    height: 50px;
     width: 300px;
+    height: 250px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center; 
+
+
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    padding: 0px;
+    margin-top:10px;
+}
 .pie {
     background-color: #00428a;
     display: flex;
@@ -47,6 +59,7 @@ h3 {
 
 .contact_us h4 {
     font-weight: bold;
+    
 }
 
 .contact_info{
@@ -88,9 +101,7 @@ i {
 .newsletter {
     width: 300px;
     height: 250px;
-    font-family: 'Open Sans', sans-serif;
-    color: #FFF;
-    font-size: 14px;
+    
 }
 
 .subscribe{
@@ -113,11 +124,11 @@ input[type="submit"]{
 
 .footer_principal{
     display: flex;
-    padding: 30px;
+    padding: 50px;
 }
 
 .footer_principal > div {
-    flex-grow: 1;
+    flex: 1;
 }
 
 @media (max-width:600px) {
