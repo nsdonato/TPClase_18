@@ -93,11 +93,13 @@ i {
 .subscribe{
     display: flex;
     flex-direction: row;
+    margin-top: 40px;
+    height: 34px;
 }
 
 input[type="email"]{
     width: 150px;
-    height: 30px;
+    height: auto;
 }
 input[type="submit"]{
     background-color: #007bff;
@@ -105,7 +107,7 @@ input[type="submit"]{
     color: #FFF;
     text-align: center;
     width: 130px;
-    height: 34px;
+    height: auto;
 }
 
 .footer_principal{
