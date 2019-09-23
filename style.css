@@ -1,3 +1,10 @@
+/* Notas sobre el maquetado
+- Entre los 1200 y los 900 px, todo el ultimo div (“our newsletter”) sobresale del body hacia la derecha, forzando un scroll horizontal. Esto ocurre porque cada uno de los cuatro divs que tienen contenido tiene un pixelaje estático. Si bien normalmente flex va a ignorar este pixelaje, en este caso no ocurre porque están contenidos adentro de dos divs (bloque1 y bloque2). Mi recomendación en este caso seria quitar el height y el width en pixeles y reemplazarlo o bien por porcentaje o bien con flex-1. Esto quizá traiga algunos problemas de alineación vertical, pero es preferible una alineación vertical mas desprolija a que el contenido de la pagina no se vea. 
+- No hay ninguna diferencia visual entre títulos y contenido. En el modelo, los títulos están en negrita. Noten que si a los h4 les ponemos font-weight: bold no hay ninguna diferencia: eso es porque al importar la tipografía de Google, también debemos importar el modelo “bold” para que este sea utilizado. Con reemplazar el import por este “@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap’);” ya se soluciona el problema. 
+- Entre los 900 y los 600 px de resolución de pantalla, los elementos no se ordenan como en el modelo (en el que forman un cuadrado). Esto también podría solucionarse con flex 1 en cada elemento y alguna separación con margin 
+- En la resolución menor a 600 px, seria bueno que el input tuviera un width del 100%, tal como lo tiene en el modelo. También habría que corregir las distancias entre los elementos. 
+- Hay mucho css sobrante, que les ire comentando a lo largo del CSS.  */
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body {
@@ -10,9 +17,10 @@ footer {
     display: flex;
     flex-direction: column; 
     font-family: 'Montserrat', sans-serif;
+    /* atencion, aqui hay dos font-family: el navegador solo tomará el último */
        
 }
-
+ 
 .footer_principal{
     display: flex;
     padding: 50px;
@@ -21,9 +29,11 @@ footer {
 .block1, .block2 {
     display: flex;
     flex-direction: row;
+    /* recuerden que no es necesario poner flex direction row */
 }
 .footer_principal > div {
     flex: 1;
+    /* este selector es identico, a niveles practicos, al de mas arriba (block1, block2). podrian integrarse */
 }
 
 
@@ -79,7 +89,7 @@ ul a:hover {
 
 .contact_us h4 {
     font-weight: bold;
-    
+    /* esta declaracion es innecesaria porque h4 ya es por defecto bold. si no se ve bold es proque esa tipografia no esta importada */
 }
 
 .contact_info{
@@ -121,6 +131,7 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    /* no es necesario aclarar flex-start */
 }
 
 
@@ -185,6 +196,7 @@ input[type="submit"]:hover {
         flex-direction: row;
 
     }
+    /* estos dos ultimos selectores son innnecesarios, ya que bloque 1 y bloque 2 ya son flex y row por la declaracion de mas arriba */
 
     .wayne , .useful {
         flex: 1;
@@ -194,6 +206,7 @@ input[type="submit"]:hover {
        flex: 1; 
 
     } 
+    /* estos dos selectores podrian integrarse en uno solo */
 
 }
 
@@ -213,6 +226,8 @@ input[type="submit"]:hover {
        
         
     }
+
+    /* no es necesario repetir display: flex para cambiar la flex direction.  */
     
     .useful {
         width:auto;
