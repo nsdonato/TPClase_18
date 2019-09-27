@@ -1,0 +1,24 @@
+Tareas: 
+    nav             -> Nil
+    main            -> Nil
+    about_us        -> Noe
+    services        -> Noe
+    choose_us       -> Celi
+    portfolio       -> Nil 
+    Testimonials    -> Cyn
+    Team            -> Celi
+    Our CLients     -> Cyn
+    Contact Us      -> Noe
+    footer          -> hecho (en equipo).
+
+h1,h2,etc: #283d50
+p: #556877
+
+Principa: font-family: “Montserrat”, sans-serif;
+Secundaria: font-family: “Open Sans”, sans-serif;
+
+Esto es lo que tendríamos que hacer, que esta en Ada: https://github.com/Ada-IT/bootcamp-frontend/tree/master/trabajos-practicos/tp-1
+
+Repo: https://github.com/nsdonato/TPClase_18
+
+Lo que hay que maquetar: https://newbiz-master-uqgespkghu.now.sh/
