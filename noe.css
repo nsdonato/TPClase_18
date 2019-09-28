@@ -103,11 +103,18 @@
   height: 64px;
   border-radius: 50%;
   border: 2px solid #007bff;
+  color: #007bff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card .about_us__first_section_left_list_card_left .about_us__first_section_left_list_card_left_img i {
-  color: #007bff;
   font-size: 24px;
+}
+
+.about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card .about_us__first_section_left_list_card_left :hover {
+  background-color: #007bff;
+  color: #ffffff;
 }
 
 .about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card .about_us__first_section_left_list_card_right_text {

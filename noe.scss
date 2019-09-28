@@ -54,10 +54,15 @@
                 height: 64px;
                 border-radius: 50%;
                 border: 2px solid $tertiary_color;
+                color: $tertiary_color;
+                transition: all 0.3s ease-in-out;
                 i {
-                  color: $tertiary_color;
                   font-size: 24px;
                 }
+              }
+              :hover {
+                background-color: $tertiary_color;
+                color: #ffffff;
               }
             }
             .about_us__first_section_left_list_card_right_text {

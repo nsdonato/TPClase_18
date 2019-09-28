@@ -39,3 +39,4 @@ HECHO:
 TODO: 
 - Unificar los css en un archivo main, ver de hacer un archivo variables e importarlo en donde corresponda. 
 - NOE: Agregar a about_us @media (max-width: 1199px) -> Se "achica" todo, o sea, el contenedor y hay mas espacio a los costados.
+- NOE: Falta agregar la transición en los iconos de about.
