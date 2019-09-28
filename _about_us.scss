@@ -1,0 +1,196 @@
+@mixin about_us {
+  .about_us {
+    .about_us__container {
+      width: 85%;
+      margin: 0 auto;
+      .about_us__header {
+        @include flex_column_center_center;
+        padding: 15px;
+        h1 {
+          @include primary_font_primary_color;
+          font-size: 36px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        p {
+          @include secondary_font_secondary_color;
+          font-size: 15px;
+          width: 50%;
+          text-align: center;
+        }
+      }
+      .about_us__first_section {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          @include secondary_font_secondary_color;
+        }
+        .about_us__first_section_left {
+          display: flex;
+          flex-direction: column;
+          width: 45%;
+          padding: 10px;
+          .about_us__first_section_left_header {
+            font-family: $secondary_font;
+          }
+          .about_us__first_section_left_list {
+            .about_us__first_section_left_list_card {
+              @include flex_center_center;
+              margin-top: 20px;
+
+              .about_us__first_section_left_list_card_left {
+                .about_us__first_section_left_list_card_left_img {
+                  @include flex_center_center;
+                  width: 64px;
+                  height: 64px;
+                  border-radius: 50%;
+                  border: 2px solid $tertiary_color;
+                  color: $tertiary_color;
+                  transition: all 0.3s ease-in-out;
+                  i {
+                    font-size: 24px;
+                  }
+                }
+                :hover {
+                  background-color: $tertiary_color;
+                  color: #ffffff;
+                }
+              }
+              .about_us__first_section_left_list_card_right_text {
+                margin-left: 10px;
+                h4 a {
+                  font-family: $primary_font;
+                  color: $primary_font_color;
+                  text-decoration: none;
+                }
+                p {
+                  margin-top: 5px;
+                  font-family: $secondary_font;
+                  line-height: 24px;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+        .about_us__first_section_rigth {
+          margin-left: 10px;
+          width: 45%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .about_us__second_section {
+        padding: 50px 0px;
+        display: flex;
+        .about_us__second_section_left {
+          margin-right: 10%;
+          width: 45%;
+          img {
+            max-width: 100%;
+          }
+        }
+        .about_us__second_section_rigth {
+          width: 45%;
+          @include flex_column_around_center;
+          h1 {
+            @include primary_font_primary_color;
+            font-size: 24px;
+          }
+          p {
+            @include secondary_font_secondary_color;
+            font-size: 15px;
+            text-align: left;
+          }
+        }
+      }
+      .about_us__third_section {
+        padding: 50px 0px;
+        display: flex;
+        .about_us__third_section_left {
+          margin-right: 10%;
+          width: 45%;
+          @include flex_column_around_center;
+          h1 {
+            @include primary_font_primary_color;
+            font-size: 24px;
+          }
+          p {
+            @include secondary_font_secondary_color;
+            font-size: 15px;
+            text-align: left;
+          }
+        }
+        .about_us__third_section_rigth {
+          width: 45%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin about_media_992_1199 {
+  .about_us {
+    .about_us__container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@mixin about_media_991 {
+  .about_us {
+    .about_us__container {
+      width: 95%;
+      .about_us__header {
+        padding: 0;
+        p {
+          width: 100%;
+        }
+      }
+      .about_us__first_section {
+        flex-direction: column-reverse;
+        .about_us__first_section_left {
+          width: 100%;
+          .about_us__first_section_left_list {
+            .about_us__first_section_left_list_card {
+              margin-top: 5px;
+            }
+          }
+        }
+        .about_us__first_section_rigth {
+          width: 100%;
+        }
+      }
+      .about_us__second_section {
+        flex-direction: column;
+        .about_us__second_section_left {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .about_us__second_section_rigth {
+          width: 100%;
+          h1,
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .about_us__third_section {
+        flex-direction: column-reverse;
+        .about_us__third_section_left {
+          width: 100%;
+        }
+        .about_us__third_section_rigth {
+          width: 95%;
+        }
+      }
+    }
+  }
+}

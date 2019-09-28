@@ -1,0 +1,134 @@
+@mixin services {
+  .services {
+    background-color: #ecf5ff;
+    padding: 60px 0 40px 0;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    .services__container {
+      width: 85%;
+      margin: 0 auto;
+      .services__main_header {
+        @include flex_column_center_center;
+        padding: 15px;
+        h1 {
+          @include primary_font_primary_color;
+          font-size: 36px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        p {
+          @include secondary_font_secondary_color;
+          font-size: 15px;
+          width: 50%;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      }
+      .services__main_info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .services__main_info_card {
+          overflow: hidden;
+          position: relative;
+          padding: 30px;
+          border-radius: 10px;
+          margin: 0 10px 40px 10px;
+          background: #fff;
+          box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+          width: 40%;
+          display: flex;
+          align-items: center;
+          margin-left: 4%;
+          .services__main_info_card_img {
+            position: absolute;
+            left: -10px;
+            top: calc(50% - 32px);
+            width: 20%;
+            .fas {
+              font-size: 50px;
+            }
+            .fa-chart-pie {
+              color: #ff689b;
+            }
+            .fa-book {
+              color: #e9bf06;
+            }
+            .fa-scroll {
+              color: #3fcdc7;
+            }
+            .fa-tachometer-alt {
+              color: #41cf2e;
+            }
+            .fa-globe-americas {
+              color: #d6ff22;
+            }
+            .fa-clock {
+              color: #4680ff;
+            }
+          }
+          .services__main_info_card_text {
+            width: 70%;
+            margin-left: 20%;
+            h4 {
+              @include primary_font_primary_color;
+              font-size: 18px;
+              font-weight: 700;
+              margin-bottom: 20px;
+              a {
+                color: #000000;
+                text-decoration: none;
+                transition: 0.5s;
+              }
+              :hover {
+                color: #0b6bd3;
+              }
+            }
+            p {
+              @include secondary_font_secondary_color;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin services_media_992_1199 {
+  .services {
+    .services__container {
+      .services__main_info {
+        .services__main_info_card {
+          width: 44%;
+        }
+      }
+    }
+  }
+}
+
+@mixin services_media_768_991 {
+  .services {
+    .services__container {
+      .services__main_info {
+        justify-content: space-between;
+        .services__main_info_card {
+          width: 44%;
+        }
+      }
+    }
+  }
+}
+
+@mixin services_media_767 {
+  .services {
+    .services__container {
+      width: 80%;
+      .services__main_info {
+        .services__main_info_card {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

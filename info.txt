@@ -2,7 +2,7 @@
 MEDIA QUERIES: 
     @media (max-width: 1199px) -> Se "achica" todo, o sea, el contenedor y hay mas espacio a los costados.
     @media (max-width: 991px) 
-    @media (max-width: 768px) -> Se "achica" todo, o sea, el contenedor y hay mas espacio a los costados. Para algunas secciones las cosas pasan de estar de a 2 a estar de a 1.
+    @media (max-width: 768px) -> Se "achica" todo, o sea, el contenedor y hay mas espacio a los costados. Para algunas secciones las cosas pasan de estar de a 2 a estar de a 1. (al menos en la sección de services)
 
 PROBLEMAS:
     - Si no se les aplica un css, verificar el orden de precedencia, sass hace que todo sea muy especifico por lo que hay que seguir la misma estructura para aplicarle bien el css en la media query por ej.
@@ -12,7 +12,7 @@ Tareas:
     nav             -> Nil
     main            -> Nil
     about_us        -> Noe, listo.
-    services        -> Noe
+    services        -> Noe, listo.
     choose_us       -> Celi
     portfolio       -> Nil 
     Testimonials    -> Cyn
@@ -33,10 +33,5 @@ Repo: https://github.com/nsdonato/TPClase_18
 
 Lo que hay que maquetar: https://newbiz-master-uqgespkghu.now.sh/
 
-HECHO:
-- Arreglar la carpeta images, que quedó con una carpeta img adentro (soltar las imagene en images)
-
 TODO: 
-- Unificar los css en un archivo main, ver de hacer un archivo variables e importarlo en donde corresponda. 
-- NOE: Agregar a about_us @media (max-width: 1199px) -> Se "achica" todo, o sea, el contenedor y hay mas espacio a los costados.
-- NOE: Falta agregar la transición en los iconos de about.
+- Cuando terminemos: unificar los css en un archivo main, unificar las variables, medias, mixin, etc.
