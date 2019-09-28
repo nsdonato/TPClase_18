@@ -22,3 +22,10 @@ Esto es lo que tendríamos que hacer, que esta en Ada: https://github.com/Ada-IT
 Repo: https://github.com/nsdonato/TPClase_18
 
 Lo que hay que maquetar: https://newbiz-master-uqgespkghu.now.sh/
+
+
+TODO: 
+// PARA CAMBIAR DESPUES:
+- Arreglar la carpeta images, que quedó con una carpeta img adentro (soltar las imagene en images)
+- Unificar los css en un archivo main, ver de hacer un archivo variables e importarlo en donde corresponda.
+- 
