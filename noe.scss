@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700&display=swap");
 
 @import "variables";
-@import "includes";
+@import "mixins";
 
 * {
   box-sizing: border-box;
@@ -136,47 +136,10 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  @include about_media_992_1199;
+}
+
 @media (max-width: 991px) {
-  .about_us {
-    .about_us__container {
-      width: 80%;
-      .about_us__first_section {
-        flex-direction: column-reverse;
-        .about_us__first_section_left {
-          width: 100%;
-          .about_us__first_section_left_list {
-            .about_us__first_section_left_list_card {
-              margin-top: 5px;
-            }
-          }
-        }
-        .about_us__first_section_rigth {
-          width: 100%;
-        }
-      }
-      .about_us__second_section {
-        flex-direction: column;
-        .about_us__second_section_left {
-          width: 100%;
-          margin-bottom: 10px;
-        }
-        .about_us__second_section_rigth {
-          width: 100%;
-          h1,
-          p {
-            margin-bottom: 10px;
-          }
-        }
-      }
-      .about_us__third_section {
-        flex-direction: column-reverse;
-        .about_us__third_section_left {
-          width: 100%;
-        }
-        .about_us__third_section_rigth {
-          width: 100%;
-        }
-      }
-    }
-  }
+  @include about_media_991;
 }

@@ -226,9 +226,23 @@
   max-width: 100%;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about_us .about_us__container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: green;
+  }
+}
+
 @media (max-width: 991px) {
   .about_us .about_us__container {
-    width: 80%;
+    width: 95%;
+  }
+  .about_us .about_us__container .about_us__header {
+    padding: 0;
+  }
+  .about_us .about_us__container .about_us__header p {
+    width: 100%;
   }
   .about_us .about_us__container .about_us__first_section {
     -webkit-box-orient: vertical;
