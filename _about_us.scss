@@ -1,8 +1,10 @@
 @mixin about_us {
   .about_us {
+    @include flex_column_center_center;
+    padding: 60px 0 40px 0;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
     .about_us__container {
-      width: 85%;
-      margin: 0 auto;
+      width: 90%;
       .about_us__header {
         @include flex_column_center_center;
         padding: 15px;
@@ -33,13 +35,13 @@
           width: 45%;
           padding: 10px;
           .about_us__first_section_left_header {
+            line-height: 1.5;
             font-family: $secondary_font;
           }
           .about_us__first_section_left_list {
             .about_us__first_section_left_list_card {
               @include flex_center_center;
               margin-top: 20px;
-
               .about_us__first_section_left_list_card_left {
                 .about_us__first_section_left_list_card_left_img {
                   @include flex_center_center;
@@ -146,10 +148,11 @@
 
 @mixin about_media_991 {
   .about_us {
+    margin-top: 50px;
     .about_us__container {
       width: 95%;
       .about_us__header {
-        padding: 0;
+        margin-bottom: 50px;
         p {
           width: 100%;
         }
