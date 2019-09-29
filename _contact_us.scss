@@ -1,0 +1,83 @@
+@mixin contact_us {
+  .contact_us {
+    padding: 60px 0 0px 0;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    .contact_us__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        @include primary_font_primary_color;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 60px;
+      }
+    }
+    .contact_us__main {
+      display: flex;
+      justify-content: space-around;
+      .contact_us__main_left {
+        width: 45%;
+        .contact_us__left_main_maps {
+          max-width: 100%;
+        }
+      }
+      .contact_us__main_rigth {
+        width: 45%;
+        .contact_us__main_rigth_header {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          .contact_us__main_rigth_address,
+          .contact_us__main_rigth_email,
+          .contact_us__main_rigth_phone {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+          }
+          i {
+            color: $tertiary_color;
+            font-size: 32px;
+          }
+          p {
+            font-family: $secondary_font;
+            font-size: 14px;
+            padding: 0 0 10px 10px;
+          }
+        }
+        .contact_us__main_contact {
+          margin-top: 30px;
+          .contact_us__main_contact_container {
+            display: flex;
+            flex-direction: column;
+            .contact_us__main_contact_container_info {
+              display: flex;
+              margin-bottom: 20px;
+              .contact_us__main_contact_container_name,
+              .contact_us__main_contact_container_email {
+                width: 49%;
+                @include contact_us_from;
+              }
+              .contact_us__main_contact_container_email {
+                margin-left: 15px;
+              }
+            }
+          }
+          .contact_us__main_contact_container_subject,
+          .contact_us__main_contact_container_message {
+            @include contact_us_from;
+            margin-bottom: 20px;
+          }
+          .contact_us__main_contact_container_subject {
+            width: 100%;
+          }
+          .contact_us__main_contact_container_message {
+            textarea {
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

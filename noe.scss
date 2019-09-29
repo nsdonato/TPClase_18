@@ -4,6 +4,7 @@
 @import "mixins";
 @import "about_us";
 @import "services";
+@import "contact_us";
 
 * {
   margin: 0;
@@ -12,6 +13,7 @@
 
 @include about_us;
 @include services;
+@include contact_us;
 
 @media (min-width: 992px) and (max-width: 1199px) {
   @include about_media_992_1199;
