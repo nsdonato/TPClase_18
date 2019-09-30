@@ -301,6 +301,10 @@ body {
                display: flex;
                justify-content: center;
                align-items: center;
+               .all-port {
+                background: $sec_color;
+                color:$color3;
+              }
                 li {
                   background-color: #ecf5ff;
                   color: $sec_color;
@@ -313,6 +317,7 @@ body {
                   margin: 10px 20px;
                   padding: 5px 10px;
                   
+                  
                 }
 
             }
@@ -324,14 +329,19 @@ body {
             align-items: center;        
             flex-wrap: wrap;
             img {
-                width: 345px;
-                height: 245px;
+                width: 350px;
+                height: 290px;
                 border-radius: 10px;
                 margin: 10px;
+                
                 
             }
         }
     } 
+}
+.sec-portfolio .container-portfolio .list-portfolio ul li:hover {
+    background: $sec_color;
+    color:$color3;
 }
 
 @media (max-width:990px) and (min-width:625px) {
