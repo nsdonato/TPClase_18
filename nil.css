@@ -184,6 +184,53 @@ body {
         border-color: #007bff;
         color: #ffff; } }
 
+.sec-portfolio {
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px; }
+  .sec-portfolio .container-portfolio .header-portfolio {
+    margin: 25px; }
+    .sec-portfolio .container-portfolio .header-portfolio h3 {
+      width: 100%;
+      font-family: “Montserrat”, sans-serif;
+      font-size: 36px;
+      color: #283d50;
+      font-weight: 500;
+      display: flex;
+      justify-content: center; }
+  .sec-portfolio .container-portfolio .list-portfolio ul {
+    font-family: “Open Sans”, sans-serif;
+    padding: 0;
+    margin: 5px 0 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sec-portfolio .container-portfolio .list-portfolio ul li {
+      background-color: #ecf5ff;
+      color: #007bff;
+      font-size: 12px;
+      list-style: none;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 10px 20px;
+      padding: 5px 10px; }
+  .sec-portfolio .container-portfolio .images-port {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    .sec-portfolio .container-portfolio .images-port img {
+      width: 345px;
+      height: 245px;
+      border-radius: 10px;
+      margin: 10px; }
+
 @media (max-width: 990px) and (min-width: 625px) {
   .nav-main {
     padding: 0px 20px;
