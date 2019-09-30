@@ -53,11 +53,12 @@
   margin-bottom: 20px;
 }
 
-.about-us .about-us__container .about-us__header p {
+.about-us .about-us__container .about-us__header .about-us__header--small {
   font-family: "Open Sans", sans-serif;
   color: #556877;
   font-size: 15px;
   width: 50%;
+  text-align: center;
 }
 
 .about-us .about-us__container .about-us__first-section {
@@ -88,6 +89,12 @@
 .about-us .about-us__container .about-us__first-section .about-us__first-section--left header {
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
+}
+
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left header .about-us__header--large {
+  font-family: "Open Sans", sans-serif;
+  color: #556877;
+  font-size: 15px;
 }
 
 .about-us .about-us__container .about-us__first-section .about-us__first-section--left .about-us__list .about-us__card {
@@ -259,7 +266,7 @@
   margin: 0 auto;
 }
 
-.services .services__container .services__main_header {
+.services .services__container header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +283,7 @@
   padding: 15px;
 }
 
-.services .services__container .services__main_header h1 {
+.services .services__container header h1 {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   font-size: 36px;
@@ -284,7 +291,7 @@
   margin-bottom: 20px;
 }
 
-.services .services__container .services__main_header p {
+.services .services__container header p {
   font-family: "Open Sans", sans-serif;
   color: #556877;
   font-size: 15px;
@@ -293,7 +300,7 @@
   margin-bottom: 50px;
 }
 
-.services .services__container .services__main_info {
+.services .services__container .services__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,7 +314,7 @@
           align-items: center;
 }
 
-.services .services__container .services__main_info .services__main_info_card {
+.services .services__container .services__main .services__card {
   overflow: hidden;
   position: relative;
   padding: 30px;
@@ -326,47 +333,47 @@
   margin-left: 4%;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_img {
+.services .services__container .services__main .services__card .services__img {
   position: absolute;
   left: -10px;
   top: calc(50% - 32px);
   width: 20%;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_img .fas {
+.services .services__container .services__main .services__card .services__img .fas {
   font-size: 50px;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_img .fa-chart-pie {
+.services .services__container .services__main .services__card .services__img .fa-chart-pie {
   color: #ff689b;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_img .fa-book {
+.services .services__container .services__main .services__card .services__img .fa-book {
   color: #e9bf06;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_img .fa-scroll {
+.services .services__container .services__main .services__card .services__img .fa-scroll {
   color: #3fcdc7;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_img .fa-tachometer-alt {
+.services .services__container .services__main .services__card .services__img .fa-tachometer-alt {
   color: #41cf2e;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_img .fa-globe-americas {
+.services .services__container .services__main .services__card .services__img .fa-globe-americas {
   color: #d6ff22;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_img .fa-clock {
+.services .services__container .services__main .services__card .services__img .fa-clock {
   color: #4680ff;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_text {
+.services .services__container .services__main .services__card .services__text {
   width: 70%;
   margin-left: 20%;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_text h4 {
+.services .services__container .services__main .services__card .services__text h4 {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   font-size: 18px;
@@ -374,18 +381,18 @@
   margin-bottom: 20px;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_text h4 a {
+.services .services__container .services__main .services__card .services__text h4 a {
   color: #000000;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_text h4 :hover {
+.services .services__container .services__main .services__card .services__text h4 :hover {
   color: #0b6bd3;
 }
 
-.services .services__container .services__main_info .services__main_info_card .services__main_info_card_text p {
+.services .services__container .services__main .services__card .services__text p {
   font-family: "Open Sans", sans-serif;
   color: #556877;
   font-size: 14px;
@@ -562,7 +569,7 @@
     width: 90%;
     margin: 0 auto;
   }
-  .services .services__container .services__main_info .services__main_info_card {
+  .services .services__container .services__main .services__card {
     width: 44%;
   }
 }
@@ -624,12 +631,12 @@
   .about-us .about-us__container .about-us__third-section .about-us__third-section--rigth {
     width: 95%;
   }
-  .services .services__container .services__main_info {
+  .services .services__container .services__main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .services .services__container .services__main_info .services__main_info_card {
+  .services .services__container .services__main .services__card {
     width: 44%;
   }
 }
@@ -638,7 +645,7 @@
   .services .services__container {
     width: 80%;
   }
-  .services .services__container .services__main_info .services__main_info_card {
+  .services .services__container .services__main .services__card {
     width: 100%;
   }
 }

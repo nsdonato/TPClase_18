@@ -6,7 +6,7 @@
     .services__container {
       width: 85%;
       margin: 0 auto;
-      .services__main_header {
+      header {
         @include flex_column_center_center;
         padding: 15px;
         h1 {
@@ -23,12 +23,12 @@
           margin-bottom: 50px;
         }
       }
-      .services__main_info {
+      .services__main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        .services__main_info_card {
+        .services__card {
           overflow: hidden;
           position: relative;
           padding: 30px;
@@ -40,7 +40,7 @@
           display: flex;
           align-items: center;
           margin-left: 4%;
-          .services__main_info_card_img {
+          .services__img {
             position: absolute;
             left: -10px;
             top: calc(50% - 32px);
@@ -67,7 +67,7 @@
               color: #4680ff;
             }
           }
-          .services__main_info_card_text {
+          .services__text {
             width: 70%;
             margin-left: 20%;
             h4 {
@@ -98,8 +98,8 @@
 @mixin services_media_992_1199 {
   .services {
     .services__container {
-      .services__main_info {
-        .services__main_info_card {
+      .services__main {
+        .services__card {
           width: 44%;
         }
       }
@@ -110,9 +110,9 @@
 @mixin services_media_768_991 {
   .services {
     .services__container {
-      .services__main_info {
+      .services__main {
         justify-content: space-between;
-        .services__main_info_card {
+        .services__card {
           width: 44%;
         }
       }
@@ -124,8 +124,8 @@
   .services {
     .services__container {
       width: 80%;
-      .services__main_info {
-        .services__main_info_card {
+      .services__main {
+        .services__card {
           width: 100%;
         }
       }

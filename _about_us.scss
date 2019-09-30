@@ -14,10 +14,11 @@
           font-weight: 500;
           margin-bottom: 20px;
         }
-        p {
+        .about-us__header--small {
           @include secondary_font_secondary_color;
           font-size: 15px;
           width: 50%;
+          text-align: center;
         }
       }
       .about-us__first-section {
@@ -33,6 +34,10 @@
           header {
             line-height: 1.5;
             font-family: $secondary_font;
+            .about-us__header--large {
+              @include secondary_font_secondary_color;
+              font-size: 15px;
+            }
           }
           .about-us__list {
             .about-us__card {
