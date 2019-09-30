@@ -94,7 +94,6 @@ h5 {
     height: 317px;   
 }
 
-
 .rec1:hover {
         background: #003b7a;
             border-color: #003b7a;
@@ -117,6 +116,16 @@ h5 {
 }
 
 .rec1-body {
+    width: 257.98px;
+    height: 222px;
+}
+
+.rec2-body {
+    width: 257.98px;
+    height: 222px;
+}
+
+.rec3-body {
     width: 257.98px;
     height: 222px;
 }
@@ -152,9 +161,4 @@ p {
         margin: 0 0 30px 0;
 }
 
-
-@media (min-width: 992px) {
-.container {
-    max-width: 960px;
-}}
 
