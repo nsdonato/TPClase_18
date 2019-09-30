@@ -46,7 +46,7 @@ body {
         display: none;
     }
     #menudrop1 {
-        // display: none;
+        display: none;
         background-color: $color3;
         color: $sec_color;
         font-family: $main_font;
@@ -56,7 +56,7 @@ body {
         position: absolute;
         top: 60px;
         right: 200px;
-        opacity: 0;
+        
         
         li {
             margin: 10px 20px;
@@ -64,7 +64,7 @@ body {
         } 
         
         #menudrop2 {
-            // display: none;
+            display: none;
             background-color: $color3;
             color: $sec_color;
             font-family: $main_font;
@@ -74,7 +74,7 @@ body {
             position: absolute;
             top: 80px;
             right: -120px;
-            opacity: 0;
+            
             
             li {
                 margin: 10px 20px;
