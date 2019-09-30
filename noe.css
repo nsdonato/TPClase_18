@@ -566,6 +566,32 @@
   height: auto;
 }
 
+.contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__button button[type="submit"] {
+  font-family: "Open Sans", sans-serif;
+  background: #007bff;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: inherit;
+}
+
+.contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__button button[type="submit"]:hover {
+  background-color: #0067d5;
+  cursor: pointer;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .about-us .about-us__container {
     width: 90%;
@@ -641,6 +667,52 @@
   .services .services__container .services__main .services__card {
     width: 44%;
   }
+  .contact-us .contact-us__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-us .contact-us__main .contact-us__main--left,
+  .contact-us .contact-us__main .contact-us__main--rigth {
+    width: 95%;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__address,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__email,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__phone {
+    margin-top: 20px;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__address i,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__email i,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__phone i {
+    width: 32px;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__address p,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__email p,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__phone p {
+    padding-left: 20px;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__info {
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__info .contact-us__name,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__info .contact-us__mail {
+    width: 100%;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__info .contact-us__mail {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__subject {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -649,6 +721,58 @@
   }
   .services .services__container .services__main .services__card {
     width: 100%;
+  }
+  .contact-us .contact-us__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-us .contact-us__main .contact-us__main--left,
+  .contact-us .contact-us__main .contact-us__main--rigth {
+    width: 90%;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__address,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__email,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__phone {
+    margin-top: 20px;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__address i,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__email i,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__phone i {
+    width: 32px;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__address p,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__email p,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__header .contact-us__phone p {
+    padding-left: 20px;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__info {
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__info .contact-us__name,
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__info .contact-us__mail {
+    width: 100%;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__info .contact-us__mail {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__subject {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=noe.css.map */

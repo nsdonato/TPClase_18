@@ -58,7 +58,7 @@
               .contact-us__name,
               .contact-us__mail {
                 width: 49%;
-                @include contact-us_from;
+                @include contact-us__form;
               }
               .contact-us__mail {
                 margin-left: 15px;
@@ -67,7 +67,7 @@
           }
           .contact-us__subject,
           .contact-us__message {
-            @include contact-us_from;
+            @include contact-us__form;
             margin-bottom: 20px;
           }
           .contact-us__subject {
@@ -76,6 +76,119 @@
           .contact-us__message {
             textarea {
               height: auto;
+            }
+          }
+          .contact-us__button {
+            display: flex;
+            justify-content: center;
+            button[type="submit"] {
+              font-family: $secondary_font;
+              background: #007bff;
+              border: 0;
+              border-radius: 20px;
+              padding: 8px 30px;
+              color: #fff;
+              transition: 0.3s;
+              font-size: inherit;
+            }
+            button[type="submit"]:hover {
+              background-color: #0067d5;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin contact_us_media_768_991 {
+  .contact-us {
+    .contact-us__main {
+      flex-direction: column;
+      align-items: center;
+      .contact-us__main--left,
+      .contact-us__main--rigth {
+        width: 95%;
+      }
+      .contact-us__main--rigth {
+        .contact-us__header {
+          .contact-us__address,
+          .contact-us__email,
+          .contact-us__phone {
+            margin-top: 20px;
+            i {
+              width: 32px;
+            }
+            p {
+              padding-left: 20px;
+            }
+          }
+        }
+        .contact-us__form {
+          .contact-us__container {
+            .contact-us__info {
+              margin-bottom: 0;
+              flex-direction: column;
+              .contact-us__name,
+              .contact-us__mail {
+                width: 100%;
+              }
+              .contact-us__mail {
+                margin-left: 0;
+                margin-top: 20px;
+              }
+            }
+            .contact-us__subject {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin contact_us_media_767 {
+  .contact-us {
+    .contact-us__main {
+      flex-direction: column;
+      align-items: center;
+      .contact-us__main--left,
+      .contact-us__main--rigth {
+        width: 90%;
+      }
+      .contact-us__main--rigth {
+        .contact-us__header {
+          flex-direction: column;
+          .contact-us__address,
+          .contact-us__email,
+          .contact-us__phone {
+            margin-top: 20px;
+            i {
+              width: 32px;
+            }
+            p {
+              padding-left: 20px;
+            }
+          }
+        }
+        .contact-us__form {
+          .contact-us__container {
+            .contact-us__info {
+              margin-bottom: 0;
+              flex-direction: column;
+              .contact-us__name,
+              .contact-us__mail {
+                width: 100%;
+              }
+              .contact-us__mail {
+                margin-left: 0;
+                margin-top: 20px;
+              }
+            }
+            .contact-us__subject {
+              margin-top: 20px;
             }
           }
         }
