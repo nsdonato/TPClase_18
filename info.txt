@@ -18,7 +18,7 @@ Tareas:
     Testimonials    -> Cyn
     Team            -> Celi
     Our CLients     -> Cyn
-    Contact Us      -> Noe
+    Contact Us      -> Noe, listo.
     footer          -> hecho (en equipo).
 
 h1,h2,etc: #283d50
