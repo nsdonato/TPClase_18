@@ -20,14 +20,16 @@ body {
     margin-right: auto;
 }
 
-#why_us {
-    width: 100%;
-}
-
 
 header h3 {
     font-size: 36px;
     padding-top: 60px;
+}
+
+
+section {
+    width: 100%;
+    display: flex;
 }
 
 header p {
@@ -125,13 +127,6 @@ i {
     padding-top: 15px;
     color: #bfddfe;
 }
-
-// .col-y-cont {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin-right: -15px;
-//     margin-left: -15px;
-// }
 
 .contadores {
 padding-top: 40px;

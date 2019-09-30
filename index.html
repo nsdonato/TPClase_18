@@ -6,106 +6,475 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="cece.css">
+  <link rel="stylesheet" href="nil.css" />
+  <link rel="stylesheet" href="noe.css" />
   <script src="https://kit.fontawesome.com/a900cf1c0c.js"></script>
   <title>TP Footer</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+
 <body>
+  <nav class="nav-main">
+    <div class="logo-ada"><img src="images/logo-tp.png" alt="logo"></div>
+    <div class="items">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>About us</a></li>
+        <li><a>Services</a></li>
+        <li><a>Porfolio</a></li>
+        <li><a>Team</a></li>
+        <li><a class="menudrop" href="#menudrop1">Drop down 
+          <i class="fas fa-angle-down"></i></a>
+          <ul id="menudrop1">
+              <li><a>Drop down 1</a></li>
+              <li><a>Drop down 2</a></li>
+              <li><a>Drop down 3</a>
+                <a class="menudrop" href="menudrop2">
+                  <i class="fas fa-angle-right">
+                
+                  </i></a></li>
+    
+              <ul id="menudrop2">
+                <li><a>Drop down 1</a></li>
+                <li><a>Drop down 2</a></li>
+                <li><a>Drop down 3</a></li>
+                <li><a>Drop down 4</a></li>
+                <li><a>Drop down 4</a></li>
+              </ul>
+              <li><a>Drop down 4</a></li>
+              <li><a>Drop down 5</a></li>
+            </ul>
+        </li>
+        
+        <li><a>Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="menuhambur"><a href="#menu"><i class="fas fa-bars"></i></a></div>
+  </nav>
+  <div id="menu">
+
+    <ul>
+      <li><a>Home</a></li>
+      <li><a>About us</a></li>
+      <li><a>Services</a></li>
+      <li><a>Porfolio</a></li>
+      <li><a>Team</a></li>
+      <li><a>Drop dowm</a> <a class="menudrop3"><i class="fas fa-angle-down"></i></a></li>
+      <ul id="menudrop3">
+        <li><a>Drop down 1</a></li>
+        <li><a>Drop down 2</a></li>
+        <li><a>Drop down 3</a></li>
+        <li><a>Drop down 4</a></li>
+        <li><a>Drop down 5</a></li>
+
+      </ul>
+      <li><a>Contact us</a></li>
+    </ul>
+    <div class="cerrar"><a href="#"><i class="fas fa-times"></i></a> </div>
+  </div>
+
+
+  <section class="intro">
+    <div class="imgintro"><img src="images/intro-img.svg" alt="imgintro"></div>
+    <div class="container1">
+      <div class="titulo1">
+        <h2>We provide </h2>
+        <span> solutions </span>
+        <h2> for your business!</h2>
+      </div>
+      <div class="link1">
+        <a class="botonget" href="#">Get started</a>
+        <a class="botonour" href="#">Our Services</a>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <section class="about-us">
+    <div class="about-us__container">
+      <header class="about-us__header">
+        <h1>About Us</h1>
+        <p class="about-us__header--small">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </header>
+
+      <section class="about-us__first-section">
+        <div class="about-us__first-section--left">
+          <header>
+            <p class="about-us__header--large">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </header>
+          <div class="about-us__list">
+            <div class="about-us__card">
+              <div class="about-us__card--left">
+                <div class="about-us__icon">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+              </div>
+              <div class="about-us__text">
+                <h4>
+                  <a href="#">Eiusmod Tempor</a>
+                </h4>
+                <p>
+                  Et harum quidem rerum facilis est et expedita distinctio.
+                  Nam libero tempore, cum soluta nobis est eligendi
+                </p>
+              </div>
+            </div>
+            <div class="about-us__card">
+              <div class="about-us__card--left">
+                <div class="about-us__icon">
+                  <i class="far fa-image"></i>
+                </div>
+              </div>
+              <div class="about-us__text">
+                <h4>
+                  <a href="#">Magni Dolores</a>
+                </h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit anim id est laborum
+                </p>
+              </div>
+            </div>
+            <div class="about-us__card">
+              <div class="about-us__card--left">
+                <div class="about-us__icon">
+                  <i class="far fa-chart-bar"></i>
+                </div>
+              </div>
+              <div class="about-us__text">
+                <h4>
+                  <a href="#">Dolor Sitema</a>
+                </h4>
+                <p>
+                  Minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat tarad limino ata
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-us__first-section--rigth">
+          <img src="./images/about/about-img.svg" alt="Imagen ilustrada de un grupo de personas y un perrito" />
+        </div>
+      </section>
+      <section class="about-us__second-section">
+        <div class="about-us__second-section--left">
+          <img src="./images/about/about-extra-1.svg" alt="Imagen ilustrada de un grupo de personas y un perrito" />
+        </div>
+        <div class="about-us__second-section--rigth">
+          <div>
+            <h1>
+              Voluptatem dignissimos provident quasi corporis voluptates sit
+              assumenda.
+            </h1>
+          </div>
+          <div>
+            <p>
+              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati
+              possimus ea. Quas molestiae perspiciatis occaecati qui rerum.
+              Deleniti quod porro sed quisquam saepe. Numquam mollitia
+              recusandae non ad at et a.
+            </p>
+          </div>
+          <div>
+            <p>
+              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti.
+              Odit qui asperiores ea corporis deserunt veritatis quidem
+              expedita perferendis. Qui rerum eligendi ex doloribus quia sit.
+              Porro rerum eum eum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about-us__third-section">
+        <div class="about-us__third-section--left">
+          <header>
+            <h1>
+              Neque saepe temporibus repellat ea ipsum et. Id vel et quia
+              tempora facere reprehenderit.
+            </h1>
+          </header>
+          <div>
+            <p>
+              Delectus alias ut incidunt delectus nam placeat in consequatur.
+              Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio.
+              Cumque fugit earum est quam officiis numquam. Ducimus corporis
+              autem at blanditiis beatae incidunt sunt.
+            </p>
+          </div>
+          <div>
+            <p>
+              Voluptas saepe natus quidem blanditiis. Non sunt impedit
+              voluptas mollitia beatae. Qui esse molestias. Laudantium libero
+              nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+            </p>
+          </div>
+          <div>
+            <p>
+              Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore
+              sint quia modi. Numquam est aut fuga mollitia exercitationem nam
+              accusantium provident quia.
+            </p>
+          </div>
+        </div>
+        <div class="about-us__third-section--rigth">
+          <img src="./images/about/about-extra-2.svg" alt="Imagen ilustrada de un grupo de personas y un perrito" />
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="services__container">
+      <header>
+        <h1>Services</h1>
+        <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+      </header>
+      <section class="services__main">
+        <div class="services__card">
+          <div class="services__img">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <div class="services__text">
+            <h4><a href="#">Lorem Ipsum</a></h4>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+              non
+              provident</p>
+          </div>
+        </div>
+        <div class="services__card">
+          <div class="services__img">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="services__text">
+            <h4><a href="#">Dolor Sitema</a></h4>
+            <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad
+              limino ata</p>
+          </div>
+        </div>
+        <div class="services__card">
+          <div class="services__img">
+            <i class="fas fa-scroll"></i>
+          </div>
+          <div class="services__text">
+            <h4><a href="#">Sed ut perspiciatis</a></h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+            </p>
+          </div>
+        </div>
+        <div class="services__card">
+          <div class="services__img">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <div class="services__text">
+            <h4><a href="#">Magni Dolores</a></h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum</p>
+          </div>
+        </div>
+        <div class="services__card">
+          <div class="services__img">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <div class="services__text">
+            <h4><a href="#">Nemo Enim</a></h4>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+              deleniti
+              atque</p>
+          </div>
+        </div>
+        <div class="services__card">
+          <div class="services__img">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="services__text">
+            <h4><a href="#">Eiusmod Tempor</a></h4>
+            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+              eligendi</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
   <section id="why_us">
-  <div class="container">
-    <header class="header-section">
-      <h3>Why choose us?</h3>
-      <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.<p>
-    </header>
-    <div class="col-y-cont">
-      <div class="columnas">
-        <div class="rec1">
-          <i class="far fa-gem"></i>
-          <div class="rec1-body">
-            <h5>Corporis dolorem</h5>
-            <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
-            <a href="#" class="readmore">Read more </a>
+      <div class="container">
+        <header class="header-section">
+          <h3>Why choose us?</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.<p>
+        </header>
+        <div class="col-y-cont">
+          <div class="columnas">
+            <div class="rec1">
+              <i class="far fa-gem"></i>
+              <div class="rec1-body">
+                <h5>Corporis dolorem</h5>
+                <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+    
+            <div class="rec2">
+              <i class="fa fa-language"></i>
+              <div class="rec2-body">
+                <h5>Voluptates dolores</h5>
+                <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+    
+            <div class="rec3">
+              <i class="far fa-object-group"></i>
+              <div class="rec3-body">
+                <h5>Eum ut aspernatur</h5>
+                <p>Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="rec2">
-          <i class="fa fa-language"></i>
-          <div class="rec2-body">
-            <h5>Voluptates dolores</h5>
-            <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
-            <a href="#" class="readmore">Read more </a>
-          </div>
-        </div>
-
-        <div class="rec3">
-          <i class="far fa-object-group"></i>
-          <div class="rec3-body">
-            <h5>Eum ut aspernatur</h5>
-            <p>Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex.</p>
-            <a href="#" class="readmore">Read more </a>
+    
+          <div class="contadores">
+            <div class="contador1">
+              <span>274</span>
+              <p>Clients</p>
+            </div>
+            <div class="contador2">
+              <span>421</span>
+              <p>Projects</p>
+            </div>
+            <div class="contador3">
+              <span>1,364</span>
+              <p>Hours Of Support</p>
+            </div>
+            <div class="contador4">
+              <span>18</span>
+              <p>Hard Workers</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="contadores">
-        <div class="contador1">
-          <span>274</span>
-          <p>Clients</p>
-        </div>
-        <div class="contador2">
-          <span>421</span>
-          <p>Projects</p>
-        </div>
-        <div class="contador3">
-          <span>1,364</span>
-          <p>Hours Of Support</p>
-        </div>
-        <div class="contador4">
-          <span>18</span>
-          <p>Hard Workers</p>
+  <section class="contact-us">
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <div class="contact-us__main">
+      <div class="contact-us__main--left">
+        <iframe class="contact-us__map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+          frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen=""></iframe>
+      </div>
+      <div class="contact-us__main--rigth">
+        <section class="contact-us__header">
+          <div class="contact-us__address">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>A108 Adam Street, NY 535022</p>
+          </div>
+          <div class="contact-us__email">
+            <i class="far fa-envelope"></i>
+            <p>info@example.com</p>
+          </div>
+          <div class="contact-us__phone">
+            <i class="fas fa-phone-alt"></i>
+            <p>+1 5589 55488 55</p>
+          </div>
+        </section>
+        <div class="contact-us__form">
+          <div class="contact-us__container">
+            <div class="contact-us__info">
+              <div class="contact-us__name">
+                <input type="text" name="name" id="name" placeholder="Your Name">
+              </div>
+              <div class="contact-us__mail">
+                <input type="email" name="email" id="email" placeholder="Your Email">
+              </div>
+            </div>
+            <div class="contact-us__subject">
+              <input type="text" name="subject" id="subject" placeholder="Subject">
+            </div>
+            <div class="contact-us__message">
+              <textarea class="form-control" name="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
+            </div>
+            <div class="contact-us__button">
+              <button type="submit" title="Send Message">Send Message</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="sec-portfolio">
+    <div class="container-portfolio">
+      <div class="header-portfolio">
+        <h3>Our Portfolio</h3>
+      </div>
+      <div class="list-portfolio">
+        <ul>
+          <li class="all-port">ALL</li>
+          <li>APP</li>
+          <li>CARD</li>
+          <li>WEB</li>
+        </ul>
+      </div>
+
+      <div class="images-port">
+        <div class="img-port"><img src="images/portfolio/app1.jpg" alt="app1"> </div>
+        <div class="img-port"><img src="images/portfolio/web3.jpg" alt="web3"></div>
+        <div class="img-port"><img src="images/portfolio/app2.jpg" alt="app2"> </div>
+        <div class="img-port"><img src="images/portfolio/card2.jpg" alt="card2"></div>
+        <div class="img-port"><img src="images/portfolio/web2.jpg" alt="web2"></div>
+        <div class="img-port"> <img src="images/portfolio/app3.jpg" alt="app3"></div>
+        <div class="img-port"><img src="images/portfolio/card1.jpg" alt="card1"></div>
+       
+        <div class="img-port"><img src="images/portfolio/card3.jpg" alt="card3"></div>
+        <div class="img-port"><img src="images/portfolio/web1.jpg" alt="web1"></div>
+        
+        
+      </div>
+    </div>
 
 
-
-
-
-  <footer>
-    <div class="footer_principal">
-      <div class="footer_principal_container">
-        <div class="row">
-          <div class="wayne">
-            <p class="header_wayne">WAYNE</p>
-            <p>
-              Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
-              nada terra videa magna derita valies darta donna mare fermentum
-              iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
-              fermentum leo. Amet volutpat consequat mauris nunc congue.
-            </p>
-          </div>
-          <div class="useful">
-            <h4>USEFUL LINKS</h4>
-            <ul>
-              <li><a href="#">Home </a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-          <div class="contact_us">
-            <h4 class="bold">CONTACT US</h4>
-            <div class="contact_info">
-              <span>A108 Adam Street</span>
-              <span>New York, NY 535022</span>
-              <span>United States</span>
-              <span><span class="bold">Phone:</span> +1 5589 55488 55</span>
-              <span><span class="bold">Email:</span> info@example.com</span>
+  </section>
+  <!-- <footer>
+      <div class="footer_principal">
+        <div class="footer_principal_container">
+          <div class="row">
+            <div class="wayne">
+              <p class="header_wayne">WAYNE</p>
+              <p>
+                Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+                nada terra videa magna derita valies darta donna mare fermentum
+                iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
+                fermentum leo. Amet volutpat consequat mauris nunc congue.
+              </p>
+            </div>
+            <div class="useful">
+              <h4>USEFUL LINKS</h4>
+              <ul>
+                <li><a href="#">Home </a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
             </div>
             <div class="contact_icons">
               <a href="#"><i class="fab fa-twitter"></i></a>
@@ -137,6 +506,7 @@
           © Copyright <span class="bold"> Wayne Enterprises</span>. All Rights
           Reserved
         </p>
+<<<<<<< HEAD
       </div>
       <div>
         <p>Designed by ...</p>
@@ -144,6 +514,15 @@
     </div>
   </footer>
   <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+=======
+      </div>
+      <div>
+        <p>Designed by ...</p>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a> -->
+>>>>>>> 8997940f89c2097ac13905f90aa419d1db065ac5
 </body>
 
 </html>

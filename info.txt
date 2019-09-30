@@ -1,14 +1,24 @@
+-------------------------- PARA TENER EN CUENTA !! --------------------------------------------
+MEDIA QUERIES: 
+    @media (max-width: 1199px) -> Se "achica" todo, o sea, el contenedor y hay mas espacio a los costados.
+    @media (max-width: 991px) 
+    @media (max-width: 768px) -> Se "achica" todo, o sea, el contenedor y hay mas espacio a los costados. Para algunas secciones las cosas pasan de estar de a 2 a estar de a 1. (al menos en la sección de services)
+
+PROBLEMAS:
+    - Si no se les aplica un css, verificar el orden de precedencia, sass hace que todo sea muy especifico por lo que hay que seguir la misma estructura para aplicarle bien el css en la media query por ej.
+
+----------------------------------------------------------------------------------------------
 Tareas: 
     nav             -> Nil
     main            -> Nil
-    about_us        -> Noe
-    services        -> Noe
+    about_us        -> Noe, listo.
+    services        -> Noe, listo.
     choose_us       -> Celi
     portfolio       -> Nil 
     Testimonials    -> Cyn
     Team            -> Celi
     Our CLients     -> Cyn
-    Contact Us      -> Noe
+    Contact Us      -> Noe, listo.
     footer          -> hecho (en equipo).
 
 h1,h2,etc: #283d50
@@ -22,3 +32,6 @@ Esto es lo que tendríamos que hacer, que esta en Ada: https://github.com/Ada-IT
 Repo: https://github.com/nsdonato/TPClase_18
 
 Lo que hay que maquetar: https://newbiz-master-uqgespkghu.now.sh/
+
+TODO: 
+- Cuando terminemos: unificar los css en un archivo main, unificar las variables, medias, mixin, etc.

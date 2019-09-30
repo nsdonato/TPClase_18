@@ -1,0 +1,200 @@
+@mixin about-us {
+  .about-us {
+    @include flex_column_center_center;
+    padding: 60px 0 40px 0;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    .about-us__container {
+      width: 90%;
+      .about-us__header {
+        @include flex_column_center_center;
+        padding: 15px;
+        h1 {
+          @include primary_font_primary_color;
+          font-size: 36px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+        .about-us__header--small {
+          @include secondary_font_secondary_color;
+          font-size: 15px;
+          width: 50%;
+          text-align: center;
+        }
+      }
+      .about-us__first-section {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .about-us__first-section--left {
+          display: flex;
+          flex-direction: column;
+          width: 45%;
+          padding: 10px;
+          header {
+            line-height: 1.5;
+            font-family: $secondary_font;
+            .about-us__header--large {
+              @include secondary_font_secondary_color;
+              font-size: 15px;
+            }
+          }
+          .about-us__list {
+            .about-us__card {
+              @include flex_center_center;
+              margin-top: 20px;
+              .about-us__card--left {
+                .about-us__icon {
+                  @include flex_center_center;
+                  width: 64px;
+                  height: 64px;
+                  border-radius: 50%;
+                  border: 2px solid $tertiary_color;
+                  color: $tertiary_color;
+                  transition: all 0.3s ease-in-out;
+                  i {
+                    font-size: 24px;
+                  }
+                }
+                :hover {
+                  background-color: $tertiary_color;
+                  color: #ffffff;
+                }
+              }
+              .about-us__text {
+                margin-left: 10px;
+                h4 a {
+                  font-family: $primary_font;
+                  color: $primary_font_color;
+                  text-decoration: none;
+                }
+                p {
+                  margin-top: 5px;
+                  font-family: $secondary_font;
+                  line-height: 24px;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+        .about-us__first-section--rigth {
+          margin-left: 10px;
+          width: 45%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .about-us__second-section {
+        padding: 50px 0px;
+        display: flex;
+        .about-us__second-section--left {
+          margin-right: 10%;
+          width: 45%;
+          img {
+            max-width: 100%;
+          }
+        }
+        .about-us__second-section--rigth {
+          width: 45%;
+          @include flex_column_around_center;
+          h1 {
+            @include primary_font_primary_color;
+            font-size: 24px;
+          }
+          p {
+            @include secondary_font_secondary_color;
+            font-size: 15px;
+            text-align: left;
+          }
+        }
+      }
+      .about-us__third-section {
+        padding: 50px 0px;
+        display: flex;
+        .about-us__third-section--left {
+          margin-right: 10%;
+          width: 45%;
+          @include flex_column_around_center;
+          h1 {
+            @include primary_font_primary_color;
+            font-size: 24px;
+          }
+          p {
+            @include secondary_font_secondary_color;
+            font-size: 15px;
+            text-align: left;
+          }
+        }
+        .about-us__third-section--rigth {
+          width: 45%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin about_media_992_1199 {
+  .about-us {
+    .about-us__container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@mixin about_media_991 {
+  .about-us {
+    margin-top: 50px;
+    .about-us__container {
+      width: 95%;
+      header {
+        margin-bottom: 50px;
+        p {
+          width: 100%;
+        }
+      }
+      .about-us__first-section {
+        flex-direction: column-reverse;
+        .about-us__first-section--left {
+          width: 100%;
+          .about-us__first-section--left {
+            .about-us__card {
+              margin-top: 5px;
+            }
+          }
+        }
+        .about-us__first-section--rigth {
+          width: 100%;
+        }
+      }
+      .about-us__second-section {
+        flex-direction: column;
+        .about-us__second-section--left {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        .about-us__second-section--rigth {
+          width: 100%;
+          h1,
+          p {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .about-us__third-section {
+        flex-direction: column-reverse;
+        .about-us__third-section--left {
+          width: 100%;
+        }
+        .about-us__third-section--rigth {
+          width: 95%;
+        }
+      }
+    }
+  }
+}

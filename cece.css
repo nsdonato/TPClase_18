@@ -14,12 +14,13 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
-#why_us {
-  width: 100%; }
-
 header h3 {
   font-size: 36px;
   padding-top: 60px; }
+
+section {
+  width: 100%;
+  display: flex; }
 
 header p {
   font-family: "Open Sans", sans-serif; }
