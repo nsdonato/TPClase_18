@@ -45,8 +45,47 @@ body {
     .menuhambur {
         display: none;
     }
+    #menudrop1 {
+        // display: none;
+        background-color: $color3;
+        color: $sec_color;
+        font-family: $main_font;
+        list-style: none;
+        font-size: 13px;
+        padding: 5px 5px 0px;
+        position: absolute;
+        top: 60px;
+        right: 200px;
+        opacity: 0;
+        
+        li {
+            margin: 10px 20px;
+            
+        } 
+        
+        #menudrop2 {
+            // display: none;
+            background-color: $color3;
+            color: $sec_color;
+            font-family: $main_font;
+            list-style: none;
+            font-size: 13px;
+            padding: 5px 5px 0px;
+            position: absolute;
+            top: 80px;
+            right: -120px;
+            opacity: 0;
+            
+            li {
+                margin: 10px 20px;
+            } 
+           
+        }
+    }
     
 }
+ 
+
 
 #menu {
     width: 100%;
@@ -66,6 +105,9 @@ body {
             padding: 10px 20px;
         }
        
+    }
+    #menudrop2 {
+        display: none;
     }
     .cerrar {
         position: absolute;
