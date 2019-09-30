@@ -99,6 +99,14 @@ body {
         
 }
 
+.menudrop:hover + #menudrop1 {
+    display:block;
+
+}
+
+// #menudrop1:target {
+//     display:block;
+// }
 
 #menu {
     width: 100%;
