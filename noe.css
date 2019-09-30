@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-.about_us {
+.about-us {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,11 +24,11 @@
           box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-.about_us .about_us__container {
+.about-us .about-us__container {
   width: 90%;
 }
 
-.about_us .about_us__container .about_us__header {
+.about-us .about-us__container .about-us__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +45,7 @@
   padding: 15px;
 }
 
-.about_us .about_us__container .about_us__header h1 {
+.about-us .about-us__container .about-us__header h1 {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   font-size: 36px;
@@ -53,15 +53,14 @@
   margin-bottom: 20px;
 }
 
-.about_us .about_us__container .about_us__header p {
+.about-us .about-us__container .about-us__header p {
   font-family: "Open Sans", sans-serif;
   color: #556877;
   font-size: 15px;
   width: 50%;
-  text-align: center;
 }
 
-.about_us .about_us__container .about_us__first_section {
+.about-us .about-us__container .about-us__first-section {
   padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,12 +73,7 @@
           align-items: center;
 }
 
-.about_us .about_us__container .about_us__first_section p {
-  font-family: "Open Sans", sans-serif;
-  color: #556877;
-}
-
-.about_us .about_us__container .about_us__first_section .about_us__first_section_left {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,12 +85,12 @@
   padding: 10px;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_header {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left header {
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left .about-us__list .about-us__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +103,7 @@
   margin-top: 20px;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card .about_us__first_section_left_list_card_left .about_us__first_section_left_list_card_left_img {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left .about-us__list .about-us__card .about-us__card--left .about-us__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,58 +122,58 @@
   transition: all 0.3s ease-in-out;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card .about_us__first_section_left_list_card_left .about_us__first_section_left_list_card_left_img i {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left .about-us__list .about-us__card .about-us__card--left .about-us__icon i {
   font-size: 24px;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card .about_us__first_section_left_list_card_left :hover {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left .about-us__list .about-us__card .about-us__card--left :hover {
   background-color: #007bff;
   color: #ffffff;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card .about_us__first_section_left_list_card_right_text {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left .about-us__list .about-us__card .about-us__text {
   margin-left: 10px;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card .about_us__first_section_left_list_card_right_text h4 a {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left .about-us__list .about-us__card .about-us__text h4 a {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   text-decoration: none;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card .about_us__first_section_left_list_card_right_text p {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--left .about-us__list .about-us__card .about-us__text p {
   margin-top: 5px;
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
   font-size: 14px;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_rigth {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--rigth {
   margin-left: 10px;
   width: 45%;
 }
 
-.about_us .about_us__container .about_us__first_section .about_us__first_section_rigth img {
+.about-us .about-us__container .about-us__first-section .about-us__first-section--rigth img {
   max-width: 100%;
 }
 
-.about_us .about_us__container .about_us__second_section {
+.about-us .about-us__container .about-us__second-section {
   padding: 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about_us .about_us__container .about_us__second_section .about_us__second_section_left {
+.about-us .about-us__container .about-us__second-section .about-us__second-section--left {
   margin-right: 10%;
   width: 45%;
 }
 
-.about_us .about_us__container .about_us__second_section .about_us__second_section_left img {
+.about-us .about-us__container .about-us__second-section .about-us__second-section--left img {
   max-width: 100%;
 }
 
-.about_us .about_us__container .about_us__second_section .about_us__second_section_rigth {
+.about-us .about-us__container .about-us__second-section .about-us__second-section--rigth {
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,27 +189,27 @@
           align-items: center;
 }
 
-.about_us .about_us__container .about_us__second_section .about_us__second_section_rigth h1 {
+.about-us .about-us__container .about-us__second-section .about-us__second-section--rigth h1 {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   font-size: 24px;
 }
 
-.about_us .about_us__container .about_us__second_section .about_us__second_section_rigth p {
+.about-us .about-us__container .about-us__second-section .about-us__second-section--rigth p {
   font-family: "Open Sans", sans-serif;
   color: #556877;
   font-size: 15px;
   text-align: left;
 }
 
-.about_us .about_us__container .about_us__third_section {
+.about-us .about-us__container .about-us__third-section {
   padding: 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about_us .about_us__container .about_us__third_section .about_us__third_section_left {
+.about-us .about-us__container .about-us__third-section .about-us__third-section--left {
   margin-right: 10%;
   width: 45%;
   display: -webkit-box;
@@ -232,24 +226,24 @@
           align-items: center;
 }
 
-.about_us .about_us__container .about_us__third_section .about_us__third_section_left h1 {
+.about-us .about-us__container .about-us__third-section .about-us__third-section--left h1 {
   font-family: "Montserrat", sans-serif;
   color: #283d50;
   font-size: 24px;
 }
 
-.about_us .about_us__container .about_us__third_section .about_us__third_section_left p {
+.about-us .about-us__container .about-us__third-section .about-us__third-section--left p {
   font-family: "Open Sans", sans-serif;
   color: #556877;
   font-size: 15px;
   text-align: left;
 }
 
-.about_us .about_us__container .about_us__third_section .about_us__third_section_rigth {
+.about-us .about-us__container .about-us__third-section .about-us__third-section--rigth {
   width: 45%;
 }
 
-.about_us .about_us__container .about_us__third_section .about_us__third_section_rigth img {
+.about-us .about-us__container .about-us__third-section .about-us__third-section--rigth img {
   max-width: 100%;
 }
 
@@ -564,7 +558,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .about_us .about_us__container {
+  .about-us .about-us__container {
     width: 90%;
     margin: 0 auto;
   }
@@ -574,60 +568,60 @@
 }
 
 @media (max-width: 991px) {
-  .about_us {
+  .about-us {
     margin-top: 50px;
   }
-  .about_us .about_us__container {
+  .about-us .about-us__container {
     width: 95%;
   }
-  .about_us .about_us__container .about_us__header {
+  .about-us .about-us__container header {
     margin-bottom: 50px;
   }
-  .about_us .about_us__container .about_us__header p {
+  .about-us .about-us__container header p {
     width: 100%;
   }
-  .about_us .about_us__container .about_us__first_section {
+  .about-us .about-us__container .about-us__first-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .about_us .about_us__container .about_us__first_section .about_us__first_section_left {
+  .about-us .about-us__container .about-us__first-section .about-us__first-section--left {
     width: 100%;
   }
-  .about_us .about_us__container .about_us__first_section .about_us__first_section_left .about_us__first_section_left_list .about_us__first_section_left_list_card {
+  .about-us .about-us__container .about-us__first-section .about-us__first-section--left .about-us__first-section--left .about-us__card {
     margin-top: 5px;
   }
-  .about_us .about_us__container .about_us__first_section .about_us__first_section_rigth {
+  .about-us .about-us__container .about-us__first-section .about-us__first-section--rigth {
     width: 100%;
   }
-  .about_us .about_us__container .about_us__second_section {
+  .about-us .about-us__container .about-us__second-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about_us .about_us__container .about_us__second_section .about_us__second_section_left {
+  .about-us .about-us__container .about-us__second-section .about-us__second-section--left {
     width: 100%;
     margin-bottom: 10px;
   }
-  .about_us .about_us__container .about_us__second_section .about_us__second_section_rigth {
+  .about-us .about-us__container .about-us__second-section .about-us__second-section--rigth {
     width: 100%;
   }
-  .about_us .about_us__container .about_us__second_section .about_us__second_section_rigth h1,
-  .about_us .about_us__container .about_us__second_section .about_us__second_section_rigth p {
+  .about-us .about-us__container .about-us__second-section .about-us__second-section--rigth h1,
+  .about-us .about-us__container .about-us__second-section .about-us__second-section--rigth p {
     margin-bottom: 10px;
   }
-  .about_us .about_us__container .about_us__third_section {
+  .about-us .about-us__container .about-us__third-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .about_us .about_us__container .about_us__third_section .about_us__third_section_left {
+  .about-us .about-us__container .about-us__third-section .about-us__third-section--left {
     width: 100%;
   }
-  .about_us .about_us__container .about_us__third_section .about_us__third_section_rigth {
+  .about-us .about-us__container .about-us__third-section .about-us__third-section--rigth {
     width: 95%;
   }
   .services .services__container .services__main_info {

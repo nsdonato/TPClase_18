@@ -26,8 +26,8 @@
         <ul id="menudrop1">
           <li><a>Drop down 1</a></li>
           <li><a>Drop down 2</a></li>
-          <li><a>Drop down 3</a><a class= "menudrop" href="menudrop2"><i class="fas fa-angle-right"></i></a></li>
-          <ul id="menudrop2" >
+          <li><a>Drop down 3</a><a class="menudrop" href="menudrop2"><i class="fas fa-angle-right"></i></a></li>
+          <ul id="menudrop2">
             <li><a>Drop down 1</a></li>
             <li><a>Drop down 2</a></li>
             <li><a>Drop down 3</a></li>
@@ -83,34 +83,35 @@
 
   </section>
 
-  <!-- NOE: Comento todo lo mio porque las clases estan mal nombradas, después corrijo esto, Male si lo lees no te mueras, intento fallido de aplicar BEM <3
-    <section class="about_us">
-    <div class="about_us__container">
-      <div class="about_us__header">
+
+  <section class="about-us">
+    <section class="about-us__container">
+      <header class="about-us__header">
         <h1>About Us</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-      </div>
-      <div class="about_us__first_section">
-        <div class="about_us__first_section_left">
-          <div class="about_us__first_section_left_header">
+      </header>
+
+      <section class="about-us__first-section">
+        <div class="about-us__first-section--left">
+          <header>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-          </div>
-          <div class="about_us__first_section_left_list">
-            <div class="about_us__first_section_left_list_card">
-              <div class="about_us__first_section_left_list_card_left">
-                <div class="about_us__first_section_left_list_card_left_img">
+          </header>
+          <div class="about-us__list">
+            <div class="about-us__card">
+              <div class="about-us__card--left">
+                <div class="about-us__icon">
                   <i class="fas fa-shopping-bag"></i>
                 </div>
               </div>
-              <div class="about_us__first_section_left_list_card_right_text">
+              <div class="about-us__text">
                 <h4>
                   <a href="#">Eiusmod Tempor</a>
                 </h4>
@@ -120,13 +121,13 @@
                 </p>
               </div>
             </div>
-            <div class="about_us__first_section_left_list_card">
-              <div class="about_us__first_section_left_list_card_left">
-                <div class="about_us__first_section_left_list_card_left_img">
+            <div class="about-us__card">
+              <div class="about-us__card--left">
+                <div class="about-us__icon">
                   <i class="far fa-image"></i>
                 </div>
               </div>
-              <div class="about_us__first_section_left_list_card_right_text">
+              <div class="about-us__text">
                 <h4>
                   <a href="#">Magni Dolores</a>
                 </h4>
@@ -136,13 +137,13 @@
                 </p>
               </div>
             </div>
-            <div class="about_us__first_section_left_list_card">
-              <div class="about_us__first_section_left_list_card_left">
-                <div class="about_us__first_section_left_list_card_left_img">
+            <div class="about-us__card">
+              <div class="about-us__card--left">
+                <div class="about-us__icon">
                   <i class="far fa-chart-bar"></i>
                 </div>
               </div>
-              <div class="about_us__first_section_left_list_card_right_text">
+              <div class="about-us__text">
                 <h4>
                   <a href="#">Dolor Sitema</a>
                 </h4>
@@ -154,15 +155,15 @@
             </div>
           </div>
         </div>
-        <div class="about_us__first_section_rigth">
+        <div class="about-us__first-section--rigth">
           <img src="./images/about/about-img.svg" alt="Imagen ilustrada de un grupo de personas y un perrito" />
         </div>
-      </div>
-      <div class="about_us__second_section">
-        <div class="about_us__second_section_left">
+      </section>
+      <section class="about-us__second-section">
+        <div class="about-us__second-section--left">
           <img src="./images/about/about-extra-1.svg" alt="Imagen ilustrada de un grupo de personas y un perrito" />
         </div>
-        <div class="about_us__second_section_rigth">
+        <div class="about-us__second-section--rigth">
           <div>
             <h1>
               Voluptatem dignissimos provident quasi corporis voluptates sit
@@ -186,15 +187,15 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="about_us__third_section">
-        <div class="about_us__third_section_left">
-          <div>
+      </section>
+      <div class="about-us__third-section">
+        <div class="about-us__third-section--left">
+          <header>
             <h1>
               Neque saepe temporibus repellat ea ipsum et. Id vel et quia
               tempora facere reprehenderit.
             </h1>
-          </div>
+          </header>
           <div>
             <p>
               Delectus alias ut incidunt delectus nam placeat in consequatur.
@@ -218,133 +219,136 @@
             </p>
           </div>
         </div>
-        <div class="about_us__third_section_rigth">
+        <div class="about-us__third-section--rigth">
           <img src="./images/about/about-extra-2.svg" alt="Imagen ilustrada de un grupo de personas y un perrito" />
         </div>
       </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section class="services">
-    <div class="services__container">
-      <div class="services__main_header">
-        <h1>Services</h1>
-        <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+    <section class="services">
+      <div class="services__container">
+        <div class="services__first-section_header">
+          <h1>Services</h1>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </div>
+        <div class="services__first-section_info">
+          <div class="services__first-section_info_card">
+            <div class="services__first-section_info_card_img">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <div class="services__first-section_info_card_text">
+              <h4><a href="#">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                non
+                provident</p>
+            </div>
+          </div>
+          <div class="services__first-section_info_card">
+            <div class="services__first-section_info_card_img">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="services__first-section_info_card_text">
+              <h4><a href="#">Dolor Sitema</a></h4>
+              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad
+                limino ata</p>
+            </div>
+          </div>
+          <div class="services__first-section_info_card">
+            <div class="services__first-section_info_card_img">
+              <i class="fas fa-scroll"></i>
+            </div>
+            <div class="services__first-section_info_card_text">
+              <h4><a href="#">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+              </p>
+            </div>
+          </div>
+          <div class="services__first-section_info_card">
+            <div class="services__first-section_info_card_img">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <div class="services__first-section_info_card_text">
+              <h4><a href="#">Magni Dolores</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum</p>
+            </div>
+          </div>
+          <div class="services__first-section_info_card">
+            <div class="services__first-section_info_card_img">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <div class="services__first-section_info_card_text">
+              <h4><a href="#">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                deleniti
+                atque</p>
+            </div>
+          </div>
+          <div class="services__first-section_info_card">
+            <div class="services__first-section_info_card_img">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="services__first-section_info_card_text">
+              <h4><a href="#">Eiusmod Tempor</a></h4>
+              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                eligendi</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="services__main_info">
-        <div class="services__main_info_card">
-          <div class="services__main_info_card_img">
-            <i class="fas fa-chart-pie"></i>
-          </div>
-          <div class="services__main_info_card_text">
-            <h4><a href="#">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-              provident</p>
-          </div>
-        </div>
-        <div class="services__main_info_card">
-          <div class="services__main_info_card_img">
-            <i class="fas fa-book"></i>
-          </div>
-          <div class="services__main_info_card_text">
-            <h4><a href="#">Dolor Sitema</a></h4>
-            <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad
-              limino ata</p>
-          </div>
-        </div>
-        <div class="services__main_info_card">
-          <div class="services__main_info_card_img">
-            <i class="fas fa-scroll"></i>
-          </div>
-          <div class="services__main_info_card_text">
-            <h4><a href="#">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-        </div>
-        <div class="services__main_info_card">
-          <div class="services__main_info_card_img">
-            <i class="fas fa-tachometer-alt"></i>
-          </div>
-          <div class="services__main_info_card_text">
-            <h4><a href="#">Magni Dolores</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum</p>
-          </div>
-        </div>
-        <div class="services__main_info_card">
-          <div class="services__main_info_card_img">
-            <i class="fas fa-globe-americas"></i>
-          </div>
-          <div class="services__main_info_card_text">
-            <h4><a href="#">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-              atque</p>
-          </div>
-        </div>
-        <div class="services__main_info_card">
-          <div class="services__main_info_card_img">
-            <i class="fas fa-clock"></i>
-          </div>
-          <div class="services__main_info_card_text">
-            <h4><a href="#">Eiusmod Tempor</a></h4>
-            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-              eligendi</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="contact_us">
-    <div class="contact_us__header">
-      <h1>Contact Us</h1>
-    </div>
-    <div class="contact_us__main">
-      <div class="contact_us__main_left">
-        <iframe class="contact_us__main_left_maps"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-          frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen=""></iframe>
+    <section class="contact_us">
+      <div class="contact_us__header">
+        <h1>Contact Us</h1>
       </div>
-      <div class="contact_us__main_rigth">
-        <div class="contact_us__main_rigth_header">
-          <div class="contact_us__main_rigth_address">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>A108 Adam Street, NY 535022</p>
-          </div>
-          <div class="contact_us__main_rigth_email">
-            <i class="far fa-envelope"></i>
-            <p>info@example.com</p>
-          </div>
-          <div class="contact_us__main_rigth_phone">
-            <i class="fas fa-phone-alt"></i>
-            <p>+1 5589 55488 55</p>
-          </div>
+      <div class="contact_us__first-section">
+        <div class="contact_us__first-section_left">
+          <iframe class="contact_us__first-section_left_maps"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+            frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen=""></iframe>
         </div>
-        <div class="contact_us__main_contact">
-          <div class="contact_us__main_contact_container">
-            <div class="contact_us__main_contact_container_info">
-              <div class="contact_us__main_contact_container_name">
-                <input type="text" name="name" id="name" placeholder="Your Name">
+        <div class="contact_us__first-section_rigth">
+          <div class="contact_us__first-section_rigth_header">
+            <div class="contact_us__first-section_rigth_address">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>A108 Adam Street, NY 535022</p>
+            </div>
+            <div class="contact_us__first-section_rigth_email">
+              <i class="far fa-envelope"></i>
+              <p>info@example.com</p>
+            </div>
+            <div class="contact_us__first-section_rigth_phone">
+              <i class="fas fa-phone-alt"></i>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div>
+          <div class="contact_us__first-section_contact">
+            <div class="contact_us__first-section_contact_container">
+              <div class="contact_us__first-section_contact_container_info">
+                <div class="contact_us__first-section_contact_container_name">
+                  <input type="text" name="name" id="name" placeholder="Your Name">
+                </div>
+                <div class="contact_us__first-section_contact_container_email">
+                  <input type="email" name="email" id="email" placeholder="Your Email">
+                </div>
               </div>
-              <div class="contact_us__main_contact_container_email">
-                <input type="email" name="email" id="email" placeholder="Your Email">
-              </div>
-            </div>
 
-            <div class="contact_us__main_contact_container_subject">
-              <input type="text" name="subject" id="subject" placeholder="Subject">
-            </div>
-            <div class="contact_us__main_contact_container_message">
-              <textarea class="form-control" name="message" rows="5" data-rule="required"
-                data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="contact_us__first-section_contact_container_subject">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+              </div>
+              <div class="contact_us__first-section_contact_container_message">
+                <textarea class="form-control" name="message" rows="5" data-rule="required"
+                  data-msg="Please write something for us" placeholder="Message"></textarea>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section> -->
+    </section>
 
-  <!-- <footer>
+    <!-- <footer>
       <div class="footer_principal">
         <div class="footer_principal_container">
           <div class="row">
