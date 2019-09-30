@@ -8,8 +8,9 @@ body {
 
 .nav-main {
   background-color: #ffff;
-  height: 80px;
+  height: 75px;
   width: 100%;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
