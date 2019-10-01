@@ -238,16 +238,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    .sec-portfolio .container-portfolio .images-port .img-port {
+    .sec-portfolio .container-portfolio .images-port img {
       width: 350px;
       height: 290px;
       border-radius: 10px;
-      margin: 10px;
-      overflow: hidden; }
-    .sec-portfolio .container-portfolio .images-port img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
+      margin: 10px; }
 
 .sec-portfolio .container-portfolio .list-portfolio ul li:hover {
   background: #007bff;
