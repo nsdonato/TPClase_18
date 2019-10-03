@@ -15,8 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
-  position: fixed;
-  z-index: 1; }
+  position: fixed; }
   .nav-main .logo-ada img {
     height: 25px;
     width: 67px; }
@@ -152,6 +151,49 @@ body {
     height: auto;
     width: 100%; }
 
+@media (max-width: 620px) and (min-width: 320px) {
+  .nav-main {
+    padding: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center; }
+    .nav-main .items {
+      display: none; }
+    .nav-main .menuhambur {
+      display: block;
+      position: absolute;
+      right: 40px;
+      top: 25px; }
+      .nav-main .menuhambur a {
+        color: #1445b3; }
+  #menu:target {
+    left: 0px; }
+  .intro {
+    padding: 120px 20px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .intro .imgintro {
+      width: 80%; }
+    .intro .container1 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; }
+      .intro .container1 .titulo1 h2 {
+        font-size: 35px; }
+      .intro .container1 .titulo1 span {
+        font-size: 35px; }
+    .intro .link1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; }
+      .intro .link1 .botonget {
+        background: #007bff;
+        border-color: #007bff;
+        color: #ffff; } }
+
 .sec-portfolio {
   background-color: #ffff;
   display: flex;
@@ -196,94 +238,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
-    .sec-portfolio .container-portfolio .images-port .img-port {
-      width: 350px;
-      height: 250px;
-      border-radius: 10px;
-      margin: 10px;
-      overflow: hidden; }
     .sec-portfolio .container-portfolio .images-port img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-    .sec-portfolio .container-portfolio .images-port .port-overflow {
       width: 350px;
-      height: 250px;
-      color: #ffff;
-      background-color: rgba(19, 39, 57, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transform: translateY(0px);
-      transition: all 1s; }
-      .sec-portfolio .container-portfolio .images-port .port-overflow h4 {
-        font-family: “Montserrat”, sans-serif;
-        font-size: 22px;
-        font-weight: 700;
-        padding: 0px;
-        margin: 0px; }
-      .sec-portfolio .container-portfolio .images-port .port-overflow p {
-        font-family: “Open Sans”, sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        padding: 0px;
-        margin: 0px; }
-      .sec-portfolio .container-portfolio .images-port .port-overflow div .overflow-icon {
-        background-color: #1445b3;
-        width: 15px;
-        height: 15px;
-        padding: 0px;
-        margin: 10px; }
+      height: 290px;
+      border-radius: 10px;
+      margin: 10px; }
 
 .sec-portfolio .container-portfolio .list-portfolio ul li:hover {
   background: #007bff;
   color: #ffff; }
-
-.sec-portfolio .container-portfolio .images-port .img-port:hover + .port-overflow {
-  transform: translateY(250); }
-
-@media (max-width: 620px) and (min-width: 320px) {
-  .nav-main {
-    padding: 20px;
-    height: 60px;
-    display: flex;
-    align-items: center; }
-    .nav-main .items {
-      display: none; }
-    .nav-main .menuhambur {
-      display: block;
-      position: absolute;
-      right: 40px;
-      top: 25px; }
-      .nav-main .menuhambur a {
-        color: #1445b3; }
-  #menu:target {
-    left: 0px; }
-  .intro {
-    padding: 120px 20px;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .intro .imgintro {
-      width: 80%; }
-    .intro .container1 {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 20px; }
-      .intro .container1 .titulo1 h2 {
-        font-size: 35px; }
-      .intro .container1 .titulo1 span {
-        font-size: 35px; }
-    .intro .link1 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center; }
-      .intro .link1 .botonget {
-        background: #007bff;
-        border-color: #007bff;
-        color: #ffff; } }
 
 @media (max-width: 990px) and (min-width: 625px) {
   .nav-main {
