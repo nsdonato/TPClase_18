@@ -775,4 +775,37 @@
     margin-top: 20px;
   }
 }
+
+.portfolius_imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  background-image: url("https://newbiz-master-uqgespkghu.now.sh/img/portfolio/app1.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.portfolius_imagen span.cito {
+  display: none;
+}
+
+.portfolius_imagen:hover span.cito {
+  display: block;
+}
+
+.portfolius_imagen:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 62, 128, 0.7)), to(rgba(0, 62, 128, 0.7))), url("https://newbiz-master-uqgespkghu.now.sh/img/portfolio/app1.jpg");
+  background-image: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7)), url("https://newbiz-master-uqgespkghu.now.sh/img/portfolio/app1.jpg");
+}
 /*# sourceMappingURL=noe.css.map */
