@@ -30,6 +30,7 @@ body {
     align-items: center;
     padding: 20px 80px;
     position: fixed;
+    z-index: 1;
     .logo-ada img {
         height: 25px;
         width: 67px;   
@@ -224,6 +225,124 @@ body {
 
 }
 
+.sec-portfolio {
+    background-color: $color3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 30px;
+    .container-portfolio {
+        .header-portfolio {
+            margin: 25px;
+            h3 {
+                width: 100%;
+                font-family: $main_font;
+                font-size: 36px;
+                color: #283d50;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .list-portfolio {
+            ul {
+               font-family: $secondary_font;
+               padding: 0;
+               margin: 5px 0 35px 0;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               .all-port {
+                background: $sec_color;
+                color:$color3;
+              }
+                li {
+                  background-color: #ecf5ff;
+                  color: $sec_color;
+                  font-size: 12px;
+                  list-style: none;
+                  border-radius: 50px;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  margin: 10px 20px;
+                  padding: 5px 10px;
+                  
+                  
+                }
+
+            }
+        }
+        .images-port {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+            flex-wrap: wrap;
+            .img-port {
+                width: 350px;
+                height: 250px;
+                border-radius: 10px;
+                margin: 10px;
+                overflow: hidden;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .port-overflow {
+                width: 350px;
+                height: 250px;
+                color: $color3;
+                background-color: rgba(19, 39, 57, 0.8);
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                transform: translateY(0px);
+                transition: all 1s;
+                h4 {
+                    font-family: $main_font;
+                    font-size: 22px;   
+                    font-weight: 700;
+                    padding: 0px;
+                    margin: 0px;
+                }
+                p {
+                    font-family: $secondary_font;
+                    font-weight: 500;
+                    font-size: 14px;
+                    padding: 0px;
+                    margin: 0px;
+                }
+                div {
+                    .overflow-icon {
+                        background-color: $main_color;
+                        width: 15px;
+                        height: 15px;
+                        padding: 0px;
+                        margin: 10px;
+                    }
+                }
+
+                
+
+            }
+
+        }
+    } 
+}
+.sec-portfolio .container-portfolio .list-portfolio ul li:hover {
+    background: $sec_color;
+    color:$color3;
+}
+.sec-portfolio .container-portfolio .images-port .img-port:hover + .port-overflow {
+    transform: translateY(250);
+}
+
+
 @media (max-width:620px) and (min-width:320px) {
 
     .nav-main {
@@ -290,82 +409,6 @@ body {
     }
 }
 
-.sec-portfolio {
-    background-color: $color3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    padding: 30px;
-    .container-portfolio {
-        .header-portfolio {
-            margin: 25px;
-            h3 {
-                width: 100%;
-                font-family: $main_font;
-                font-size: 36px;
-                color: #283d50;
-                font-weight: 500;
-                display: flex;
-                justify-content: center;
-            }
-        }
-
-        .list-portfolio {
-            ul {
-               font-family: $secondary_font;
-               padding: 0;
-               margin: 5px 0 35px 0;
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               .all-port {
-                background: $sec_color;
-                color:$color3;
-              }
-                li {
-                  background-color: #ecf5ff;
-                  color: $sec_color;
-                  font-size: 12px;
-                  list-style: none;
-                  border-radius: 50px;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center;
-                  margin: 10px 20px;
-                  padding: 5px 10px;
-                  
-                  
-                }
-
-            }
-        }
-        .images-port {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;        
-            flex-wrap: wrap;
-            .img-port {
-                width: 350px;
-                height: 290px;
-                border-radius: 10px;
-                margin: 10px;
-                overflow: hidden;
-            }
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-        }
-    } 
-}
-.sec-portfolio .container-portfolio .list-portfolio ul li:hover {
-    background: $sec_color;
-    color:$color3;
-}
 
 @media (max-width:990px) and (min-width:625px) {
     
