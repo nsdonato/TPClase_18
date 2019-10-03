@@ -347,7 +347,7 @@ body {
     color:$color3;
 }
 .sec-portfolio .container-portfolio .images-port .img-port:hover + .port-overflow {
-    transform: translateY(0);
+    transform: translateY(0ra);
     z-index: 99;
 }
 

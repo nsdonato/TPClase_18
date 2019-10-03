@@ -1,164 +1,153 @@
-$primary-font: 'Montserrat', sans-serif;
-$secondary-font: 'Open Sans', sans-serif;
-
-
-body {
-    margin: 0;
-    line-height: 1.5;
-}
+$primary-font: "Montserrat", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
 
 .container {
-    background-color: #004a99;
-    color: #fff;
-    font-family: $primary-font;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #004a99;
+  color: #fff;
+  font-family: $primary-font;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0;
 }
 
-
-header h3 {
-    font-size: 36px;
-    padding-top: 60px;
+#why_us {
+  width: 100%;
+  display: flex;
 }
 
-
-section {
-    width: 100%;
-    display: flex;
-}
-
-header p {
+.header-section {
+  p {
     font-family: $secondary-font;
-}
-
-.header-section p {
     padding-bottom: 60px;
     text-align: center;
     margin: auto;
     font-size: 15px;
     width: 50%;
-}
-
-a {
-    text-decoration: none;
-    background-color: transparent;
+  }
+  h3 {
+    font-size: 36px;
+    padding-top: 60px;
+    margin: 0 0 20px 0;
+    position: relative;
+  }
 }
 
 .readmore {
-    color: #fff;
-    font-weight: 600;
-    display: inline-block;
-    transition: 0.3s ease-in-out;
-    border-bottom: #00458f solid 2px;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  border-bottom: #00458f solid 2px;
 }
 
 .readmore:hover {
-    border-bottom: #fff solid 2px;
+  border-bottom: #fff solid 2px;
 }
-
-h5 {
-    display: block;
-    font-size: 22px;
-    font-weight: 600;
-}
-
 
 .columnas {
-   display: flex;
-   padding-right: 15px;
-   padding-left: 15px;
-   justify-content: center;
-   text-align: center;
-   height: 100%;
-   transition: 0,3s ease-in-out;
-   
+  display: flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  transition: 0, 3s ease-in-out;
 }
 
-.rec1, .rec2, .rec3 {
-    border: 1px solid rgba(0, 0, 0, .125);
-    flex-direction: column;
-    position: relative;
-    box-sizing: border-box;
-    background: #00458f;
-    border-color: #00458f;
-    border-radius: 10px;
-    margin: 0 15px;
-    padding: 15px 0;
-    text-align: center;
-    width: 259.98px;
-    height: 317px;   
+.rec1,
+.rec2,
+.rec3 {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+  background: #00458f;
+  border-color: #00458f;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 15px 0;
+  text-align: center;
+  width: 259.98px;
+  height: 317px;
 }
 
 .rec1:hover {
-        background: #003b7a;
-            border-color: #003b7a;
-        }
+  background: #003b7a;
+  border-color: #003b7a;
+}
 
 .rec2:hover {
-    background: #003b7a;
-        border-color: #003b7a;
-    }
+  background: #003b7a;
+  border-color: #003b7a;
+}
 
 .rec3:hover {
-    background: #003b7a;
-        border-color: #003b7a;
-    }
+  background: #003b7a;
+  border-color: #003b7a;
+}
 
-.rec1-body p, .rec2-body p, .rec3-body p {
-    font-size: 15px;
-    font-family: $secondary-font;
-    color: #d8eafe;
+.rec1-body p,
+.rec2-body p,
+.rec3-body p {
+  font-size: 15px;
+  font-family: $secondary-font;
+  color: #d8eafe;
 }
 
 .rec1-body {
-    width: 257.98px;
-    height: 222px;
+  width: 257.98px;
+  height: 222px;
+  padding: 1.25rem;
 }
 
 .rec2-body {
-    width: 257.98px;
-    height: 222px;
+  width: 257.98px;
+  height: 222px;
 }
 
 .rec3-body {
-    width: 257.98px;
-    height: 222px;
+  width: 257.98px;
+  height: 222px;
 }
 
-
-i {
+.columnas {
+  i {
     font-size: 48px;
     padding-top: 15px;
     color: #bfddfe;
+  }
+  p {
+    margin: 0 0 30px 0;
+  }
+  a {
+    text-decoration: none;
+    background-color: transparent;
+  }
+  h5 {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
 }
 
 .contadores {
-padding-top: 40px;
-text-align: center;
-columns: 4;
-}
-
-.contadores p {
+  padding-top: 40px;
+  text-align: center;
+  columns: 4;
+  p {
     text-align: center;
-}
-
-.contadores span {
+  }
+  span {
     font-family: $primary-font;
     font-weight: bold;
     font-size: 48px;
     display: block;
     color: #fff;
+  }
 }
-
-p {
-    display: block;
-        padding: 0;
-        margin: 0 0 30px 0;
-}
-
-
