@@ -83,15 +83,16 @@ body {
         
         #menudrop2 {
             display: none;
-            background-color: $color3;
+            width: 200px;
+            background-color:$color3;
             color: $sec_color;
             font-family: $main_font;
             list-style: none;
             font-size: 13px;
             padding: 5px 5px 0px;
             position: absolute;
-            top: 80px;
-            right: -120px;
+            top: 70px;
+            left: 100px;
             
             
             li {
@@ -115,6 +116,11 @@ body {
 
 #menudrop1:hover {
     display: block;
+}
+
+.nav-main .menudrop2:hover  #menudrop2 { 
+    display: block;
+  
 }
 
 
