@@ -16,6 +16,7 @@ body {
   align-items: center;
   padding: 20px 80px;
   position: fixed;
+<<<<<<< HEAD
   z-index: 2; }
   .nav-main .logo-ada img {
     height: 25px;
@@ -63,6 +64,78 @@ body {
       right: -120px; }
       .nav-main #menudrop1 #menudrop2 li {
         margin: 10px 20px; }
+=======
+  z-index: 2;
+}
+
+.nav-main .logo-ada img {
+  height: 25px;
+  width: 67px;
+}
+
+.nav-main .items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: “Montserrat”, sans-serif;
+  color: #1445b3;
+  list-style: none;
+}
+
+.nav-main .items ul li {
+  margin-right: 30px;
+}
+
+.nav-main .items ul .menudrop {
+  margin: 10px;
+  text-decoration: none;
+  font-family: “Montserrat”, sans-serif;
+  color: #1445b3;
+}
+
+.nav-main .items ul .icono-menu {
+  padding: 0px;
+  font-size: 12px;
+}
+
+.nav-main .menuhambur {
+  display: none;
+}
+
+.nav-main #menudrop1 {
+  display: none;
+  background-color: #ffff;
+  color: #007bff;
+  font-family: “Montserrat”, sans-serif;
+  list-style: none;
+  font-size: 13px;
+  padding: 5px 5px 0px;
+  position: absolute;
+  top: 45px;
+  right: 200px;
+}
+
+.nav-main #menudrop1 li {
+  margin: 10px 20px;
+}
+
+.nav-main #menudrop1 #menudrop2 {
+  display: none;
+  background-color: #ffff;
+  color: #007bff;
+  font-family: “Montserrat”, sans-serif;
+  list-style: none;
+  font-size: 13px;
+  padding: 5px 5px 0px;
+  position: absolute;
+  top: 80px;
+  right: -120px;
+}
+
+.nav-main #menudrop1 #menudrop2 li {
+  margin: 10px 20px;
+}
+>>>>>>> 208cb47964c5278b2a88ae045d0c4cc7616b8d4e
 
 .nav-main .items li a:hover {
   color: #007bff; }
@@ -155,6 +228,7 @@ body {
 .sec-portfolio {
   background-color: #ffff;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -241,14 +315,178 @@ body {
         padding: 0px;
         margin: 10px;
         z-index: 1; }
+=======
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.sec-portfolio .container-portfolio .header-portfolio {
+  margin: 25px;
+}
+
+.sec-portfolio .container-portfolio .header-portfolio h3 {
+  width: 100%;
+  font-family: “Montserrat”, sans-serif;
+  font-size: 36px;
+  color: #283d50;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sec-portfolio .container-portfolio .list-portfolio ul {
+  font-family: “Open Sans”, sans-serif;
+  padding: 0;
+  margin: 5px 0 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sec-portfolio .container-portfolio .list-portfolio ul .all-port {
+  background: #007bff;
+  color: #ffff;
+}
+
+.sec-portfolio .container-portfolio .list-portfolio ul li {
+  background-color: #ecf5ff;
+  color: #007bff;
+  font-size: 12px;
+  list-style: none;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px 20px;
+  padding: 5px 10px;
+}
+
+.sec-portfolio .container-portfolio .images-port {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sec-portfolio .container-portfolio .images-port .img-port {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sec-portfolio .container-portfolio .images-port img {
+  width: auto;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+.sec-portfolio .container-portfolio .images-port .port-overflow {
+  width: 350px;
+  height: 250px;
+  color: #ffff;
+  background-color: rgba(19, 39, 57, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(250);
+          transform: translateY(250);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  z-index: 99;
+}
+
+.sec-portfolio .container-portfolio .images-port .port-overflow h4 {
+  font-family: “Montserrat”, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+}
+
+.sec-portfolio .container-portfolio .images-port .port-overflow p {
+  font-family: “Open Sans”, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+}
+
+.sec-portfolio .container-portfolio .images-port .port-overflow div .overflow-icon {
+  background-color: #1445b3;
+  width: 15px;
+  height: 15px;
+  padding: 0px;
+  margin: 10px;
+  z-index: 1;
+}
+>>>>>>> 208cb47964c5278b2a88ae045d0c4cc7616b8d4e
 
 .sec-portfolio .container-portfolio .list-portfolio ul li:hover {
   background: #007bff;
   color: #ffff; }
 
+<<<<<<< HEAD
 .sec-portfolio .container-portfolio .images-port .img-port:hover .port-overflow {
   transform: translateY(0);
   z-index: 99; }
+=======
+.sec-portfolio .container-portfolio .images-port .img-port:hover + .port-overflow {
+  -webkit-transform: translateY(0ra);
+          transform: translateY(0ra);
+  z-index: 99;
+}
+>>>>>>> 208cb47964c5278b2a88ae045d0c4cc7616b8d4e
 
 @media (max-width: 620px) and (min-width: 320px) {
   .nav-main {
