@@ -290,30 +290,30 @@ body {
                 position: relative;
             }
             img {
-                width: auto;
+                width: 350px;
                 height: auto;
-                object-fit: cover;
                 position: absolute;
+                
             }
             .port-overflow {
                 width: 350px;
                 height: 250px;
                 color: $color3;
-                background-color: rgba(19, 39, 57, 0.8);
+                background-color: rgba(19, 39, 57, 0.5);
                 display:flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                transform: translateY(250);
+                transform: translateY(250px);
                 transition: all 1s;
-                z-index: 99;
+                z-index: 9;
                 
                 h4 {
                     font-family: $main_font;
                     font-size: 22px;   
                     font-weight: 700;
                     padding: 0px;
-                    margin: 0px;
+                    margin: 10px;
                     z-index: 1;
                 }
                 p {
@@ -321,14 +321,15 @@ body {
                     font-weight: 500;
                     font-size: 14px;
                     padding: 0px;
-                    margin: 0px;
+                    margin: 10px;
                     z-index: 1;
                 }
                 div {
                     .overflow-icon {
-                        background-color: $main_color;
-                        width: 15px;
-                        height: 15px;
+                        background-color: $sec_color;
+                        color: $color3;
+                        width: 20px;
+                        height: 20px;
                         padding: 0px;
                         margin: 10px;
                         z-index: 1;
@@ -346,9 +347,11 @@ body {
     background: $sec_color;
     color:$color3;
 }
-.sec-portfolio .container-portfolio .images-port .img-port:hover + .port-overflow {
-    transform: translateY(0ra);
+.sec-portfolio .container-portfolio .images-port .img-port:hover {
+    .port-overflow{
+    transform: translateY(0);
     z-index: 99;
+}
 }
 
 
