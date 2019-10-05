@@ -296,10 +296,10 @@ body {
                 position: relative;
             }
             img {
+                position: absolute;
                 width: 350px;
                 height: auto;
-                position: absolute;
-                
+                                
             }
             .port-overflow {
                 width: 350px;
@@ -311,7 +311,6 @@ body {
                 justify-content: center;
                 align-items: center;
                 transform: translateY(250px);
-                transition: all 1s;
                 z-index: 9;
                 
                 h4 {
@@ -319,7 +318,7 @@ body {
                     font-size: 22px;   
                     font-weight: 700;
                     padding: 0px;
-                    margin: 10px;
+                    margin: 5px;
                     z-index: 1;
                 }
                 p {
@@ -327,16 +326,16 @@ body {
                     font-weight: 500;
                     font-size: 14px;
                     padding: 0px;
-                    margin: 10px;
+                    margin: 15px;
                     z-index: 1;
                 }
                 div {
                     .overflow-icon {
                         background-color: $sec_color;
                         color: $color3;
-                        width: 20px;
-                        height: 20px;
-                        padding: 0px;
+                        font-size: 25px;
+                        border-radius: 50px;
+                        padding: 5px;
                         margin: 10px;
                         z-index: 1;
                     }
@@ -360,6 +359,9 @@ body {
 }
 }
 
+.sec-portfolio .container-portfolio .images-port .img-port .port-overflow h4:hover {
+    color: $sec_color;
+}
 
 @media (max-width:620px) and (min-width:320px) {
 
