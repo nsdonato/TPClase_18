@@ -380,5 +380,6 @@ body {
   .sec-portfolio .container-portfolio .images-port {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start; } }
+    justify-content: flex-start; }
+    .sec-portfolio .container-portfolio .images-port .img-port {
+      flex-shrink: 4; } }
