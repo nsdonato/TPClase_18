@@ -180,7 +180,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px; }
+  padding: 60px 0px; }
   .sec-portfolio .container-portfolio .header-portfolio {
     margin: 25px; }
     .sec-portfolio .container-portfolio .header-portfolio h3 {
@@ -215,6 +215,8 @@ body {
   .sec-portfolio .container-portfolio .images-port {
     width: 100%;
     display: flex;
+    margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
@@ -275,6 +277,9 @@ body {
 
 .sec-portfolio .container-portfolio .images-port .img-port .port-overflow h4:hover {
   color: #007bff; }
+
+.sec-portfolio .container-portfolio .images-port .img-port .port-overflow .overflow-icon:hover {
+  background-color: #3395ff; }
 
 @media (max-width: 620px) and (min-width: 320px) {
   .nav-main {
@@ -369,10 +374,11 @@ body {
         .intro .container1 .link1 .botonget {
           background: #007bff;
           border-color: #007bff;
-          color: #ffff; }
-  .sec-portfolio .container-portfolio .imges-port {
+          color: #ffff; } }
+
+@media (max-width: 1040px) and (min-width: 920px) {
+  .sec-portfolio .container-portfolio .images-port {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex: -2;
-    margin-left: -15px;
-    margin-right: -15px; } }
+    flex-direction: row;
+    justify-content: flex-start; } }
