@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:400,700&display=swap');
+@import url('https:onts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:400,700&display=swap');
 
 $main_font: “Montserrat”, sans-serif;
 $secondary_font: “Open Sans”, sans-serif;
 $main_color:#1445b3;
 $sec_color:#007bff;
 $color3: #ffff;
+$color4: #74b5fc;
 
 * {
     box-sizing: border-box;
@@ -15,10 +16,12 @@ $color3: #ffff;
     color: $color3;
    
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
-    scroll-behavior: smooth;
 }
 
 .nav-main {
@@ -46,6 +49,7 @@ body {
          a {
            text-decoration: none;
            color: $sec_color;
+           transition: all 1s;
          }
         }
         .menudrop {
@@ -158,6 +162,7 @@ body {
     #menudrop3 {
         display: none;
         padding: 0px;
+        z-index: 2;
 
     }
     .cerrar {
@@ -172,13 +177,7 @@ body {
     
 }
 
-#menu ul li .menudrop3:hover + #menudrop3 {
-    display: block;  
-}
 
-#menudrop3 {
-    display: block;
-}
 
 
 .intro {
@@ -214,7 +213,7 @@ body {
             color: $color3;
             font-size: 55px;
             font-weight: 700;
-            color: #74b5fc;
+            color: $color4;
             text-decoration: underline;
         }
     }
@@ -261,6 +260,7 @@ body {
     justify-content: center;
     align-items:center;
     padding: 60px 0px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
     .container-portfolio {
         .header-portfolio {
             margin: 25px;
@@ -422,6 +422,15 @@ body {
     #menu:target {
     left: 0px;
     }
+    #menu ul li a:hover {
+        color: $color4;
+    }
+    #menu ul li .menudrop3:hover + #menudrop3{
+        display: block;
+                
+    }
+    
+    
 
 
 
@@ -487,7 +496,6 @@ body {
         }
 
     }
-    
     #menu {
         width: 100%;
         height: 800px;
@@ -502,9 +510,21 @@ body {
         }
     }
 
+    
     #menu:target {
     left: 0px;
     }
+    #menu ul li a:hover {
+        color: $color4;
+    }
+    #menu ul li .menudrop3:hover + #menudrop3{
+        display: block;
+                
+    }
+    
+
+    
+    
     
     .intro {
         padding: 120px 20px;
