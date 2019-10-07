@@ -340,31 +340,31 @@
   width: 20%;
 }
 
-.services .services__container .services__main .services__card .services__img .fas {
-  font-size: 50px;
+.services .services__container .services__main .services__card .services__img .ionic {
+  font-size: 70px;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-chart-pie {
+.services .services__container .services__main .services__card .services__img .ion-ios-analytics-outline {
   color: #ff689b;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-book {
+.services .services__container .services__main .services__card .services__img .ion-ios-bookmarks-outline {
   color: #e9bf06;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-scroll {
+.services .services__container .services__main .services__card .services__img .ion-ios-paper-outline {
   color: #3fcdc7;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-tachometer-alt {
+.services .services__container .services__main .services__card .services__img .ion-ios-speedometer-outline {
   color: #41cf2e;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-globe-americas {
+.services .services__container .services__main .services__card .services__img .ion-ios-world-outline {
   color: #d6ff22;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-clock {
+.services .services__container .services__main .services__card .services__img .ion-ios-clock-outline {
   color: #4680ff;
 }
 
