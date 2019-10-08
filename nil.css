@@ -96,24 +96,29 @@ body {
   left: -100%;
   z-index: 2;
   transition: 1s all; }
-  #menu ul {
-    list-style: none;
-    line-height: 1.5; }
-    #menu ul li {
-      padding: 10px 20px; }
-      #menu ul li a {
-        text-decoration: none;
-        color: #ffff; }
-  #menu #menudrop3 {
-    display: none;
+  #menu .menu-list {
+    width: 40%;
+    height: 100%;
     padding: 0px;
-    z-index: 2; }
-  #menu .cerrar {
-    position: absolute;
-    right: 40px;
-    top: 25px; }
-    #menu .cerrar a {
-      color: #ffff; }
+    background-color: rgba(19, 39, 57, 0.9); }
+    #menu .menu-list ul {
+      list-style: none;
+      line-height: 1.5; }
+      #menu .menu-list ul li {
+        padding: 10px; }
+        #menu .menu-list ul li a {
+          text-decoration: none;
+          color: #ffff; }
+    #menu .menu-list #menudrop3 {
+      display: none;
+      padding: 0px;
+      z-index: 2; }
+    #menu .menu-list .cerrar {
+      position: absolute;
+      right: 40px;
+      top: 25px; }
+      #menu .menu-list .cerrar a {
+        color: #ffff; }
 
 .intro {
   background-color: #1445b3;

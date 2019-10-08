@@ -145,11 +145,18 @@ body {
     left: -100%;
     z-index: 2;
     transition: 1s all;
+    .menu-list {
+        width: 40%;
+        height: 100%;
+        padding:0px;
+        background-color:rgba(19, 39, 57, 0.9);
+
+
     ul {
         list-style: none;
         line-height: 1.5;
         li {
-            padding: 10px 20px;
+            padding: 10px;
             a {
                 text-decoration: none;
                 color: $color3;
@@ -171,6 +178,7 @@ body {
             color: $color3;
         }
         
+    }
     }
     
 }
