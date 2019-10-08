@@ -11,6 +11,7 @@ body {
 
 .nav-main {
   background-color: #ffff;
+  color: #1445b3;
   height: 75px;
   width: 100%;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
@@ -26,13 +27,12 @@ body {
   .nav-main .items ul {
     display: flex;
     font-family: “Montserrat”, sans-serif;
-    color: #1445b3;
     list-style: none; }
     .nav-main .items ul li {
       margin-right: 30px; }
       .nav-main .items ul li a {
         text-decoration: none;
-        color: #007bff;
+        color: #1445b3;
         transition: all 1s; }
     .nav-main .items ul .menudrop {
       margin: 10px;
@@ -73,9 +73,6 @@ body {
         margin: 10px 20px; }
 
 .nav-main .items li a:hover {
-  color: #007bff; }
-
-.nav-main .items li a:visited {
   color: #007bff; }
 
 .menudrop:hover + #menudrop1 {
