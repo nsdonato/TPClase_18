@@ -122,3 +122,107 @@
     font-size: 48px;
     display: block;
     color: #fff; }
+
+#team {
+  background: #fff;
+  padding: 60px 0;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+
+.container-team {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.section-headerteam h3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 36px;
+  color: #283d50;
+  text-align: center;
+  font-weight: 500;
+  position: relative; }
+
+.section-headerteam p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%; }
+
+.rowteam {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  .rowteam .bat1, .rowteam .bat2, .rowteam .bat3, .rowteam .bat4 {
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 25%;
+    max-width: 25%; }
+    .rowteam .bat1 h4, .rowteam .bat2 h4, .rowteam .bat3 h4, .rowteam .bat4 h4 {
+      font-weight: 700;
+      margin-bottom: 2px;
+      font-size: 18px;
+      color: #fff; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.member-info {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s; }
+
+.member:hover .member-info {
+  background: rgba(0, 62, 128, 0.7);
+  opacity: 1;
+  transition: 0.4s; }
+
+.member-info-content {
+  margin-top: 50px;
+  transition: margin 0.2s; }
+
+.member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s; }
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  padding-bottom: 14px; }
+
+.member {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden; }
+  .member img {
+    vertical-align: middle; }
+    .member img .img-fluid {
+      vertical-align: middle;
+      border-style: none; }
+
+.social-team i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #fff; }
+
+.social-team a {
+  color: #fff;
+  transition: none; }
