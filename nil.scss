@@ -86,13 +86,15 @@ body {
         
         li {
             margin: 10px 20px;
+            padding: 5px;
+            background-color: yellow;
             
         } 
         
         #menudrop2 {
             display: none;
             width: 200px;
-            background-color:$color3;
+            background-color:red;
             color: $sec_color;
             font-family: $main_font;
             list-style: none;
@@ -100,9 +102,7 @@ body {
             padding: 5px 5px 0px;
             position: absolute;
             top: 70px;
-            left: 100px;
-            
-            
+            left: 110px;
             li {
                 margin: 10px 20px;
             } 
@@ -111,7 +111,8 @@ body {
     }
     
 }
- 
+
+
 .nav-main .items li a:hover {
     color: $sec_color;
         
@@ -127,9 +128,12 @@ body {
     display: block;
 }
 
-.nav-main .menudrop2:hover  #menudrop2 { 
+.nav-main .menudrop2:hover + #menudrop2{ 
     display: block;
-  
+}
+
+#menudrop2:hover {
+    display: block;
 }
 
 
@@ -164,12 +168,16 @@ body {
         }
        
     }
+    .menudrop3 {
+        padding-bottom: 5px;
+    }
     #menudrop3 {
         display: none;
         padding: 0px;
-        z-index: 2;
-
-    }
+     }
+    #menudrop3:hover {
+        display: block
+      }
     .cerrar {
         position: absolute;
         right: 40px;

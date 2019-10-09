@@ -56,11 +56,13 @@ body {
     top: 45px;
     right: 200px; }
     .nav-main #menudrop1 li {
-      margin: 10px 20px; }
+      margin: 10px 20px;
+      padding: 5px;
+      background-color: yellow; }
     .nav-main #menudrop1 #menudrop2 {
       display: none;
       width: 200px;
-      background-color: #ffff;
+      background-color: red;
       color: #007bff;
       font-family: “Montserrat”, sans-serif;
       list-style: none;
@@ -68,7 +70,7 @@ body {
       padding: 5px 5px 0px;
       position: absolute;
       top: 70px;
-      left: 100px; }
+      left: 110px; }
       .nav-main #menudrop1 #menudrop2 li {
         margin: 10px 20px; }
 
@@ -81,7 +83,10 @@ body {
 #menudrop1:hover {
   display: block; }
 
-.nav-main .menudrop2:hover #menudrop2 {
+.nav-main .menudrop2:hover + #menudrop2 {
+  display: block; }
+
+#menudrop2:hover {
   display: block; }
 
 #menu {
@@ -109,10 +114,13 @@ body {
         #menu .menu-list ul li a {
           text-decoration: none;
           color: #ffff; }
+    #menu .menu-list .menudrop3 {
+      padding-bottom: 5px; }
     #menu .menu-list #menudrop3 {
       display: none;
-      padding: 0px;
-      z-index: 2; }
+      padding: 0px; }
+    #menu .menu-list #menudrop3:hover {
+      display: block; }
     #menu .menu-list .cerrar {
       position: absolute;
       right: 40px;
