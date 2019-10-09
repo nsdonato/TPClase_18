@@ -69,7 +69,8 @@ body {
       padding: 5px 5px 0px;
       position: absolute;
       top: 70px;
-      left: 110px; }
+      left: 110px;
+      z-index: 2; }
       .nav-main #menudrop1 #menudrop2 li {
         margin: 10px 20px; }
 
@@ -82,10 +83,10 @@ body {
 #menudrop1:hover {
   display: block; }
 
-.nav-main .menudrop2:hover + #menudrop2 {
+#menudrop2:hover {
   display: block; }
 
-#menudrop2:hover {
+.nav-main .menudrop2:hover + #menudrop2 {
   display: block; }
 
 #menu {

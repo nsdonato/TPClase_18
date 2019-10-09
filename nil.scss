@@ -102,6 +102,7 @@ body {
             position: absolute;
             top: 70px;
             left: 110px;
+            z-index: 2;
             li {
                 margin: 10px 20px;
             } 
@@ -126,14 +127,14 @@ body {
 #menudrop1:hover {
     display: block;
 }
+#menudrop2:hover {
+    display: block;
+}
 
 .nav-main .menudrop2:hover + #menudrop2{ 
     display: block;
 }
 
-#menudrop2:hover {
-    display: block;
-}
 
 
 #menu {
