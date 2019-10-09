@@ -57,12 +57,11 @@ body {
     right: 200px; }
     .nav-main #menudrop1 li {
       margin: 10px 20px;
-      padding: 5px;
-      background-color: yellow; }
+      padding: 5px; }
     .nav-main #menudrop1 #menudrop2 {
       display: none;
       width: 200px;
-      background-color: red;
+      background-color: #ffff;
       color: #007bff;
       font-family: “Montserrat”, sans-serif;
       list-style: none;

@@ -87,14 +87,13 @@ body {
         li {
             margin: 10px 20px;
             padding: 5px;
-            background-color: yellow;
-            
+                       
         } 
         
         #menudrop2 {
             display: none;
             width: 200px;
-            background-color:red;
+            background-color: $color3;
             color: $sec_color;
             font-family: $main_font;
             list-style: none;
