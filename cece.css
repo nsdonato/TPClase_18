@@ -229,4 +229,5 @@
 
 .social-team a {
   color: #fff;
-  transition: none; }
+  transition: none;
+  text-decoration: none; }
