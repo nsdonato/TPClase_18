@@ -1,13 +1,17 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:400,700&display=swap");
+@import url("https:onts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:400,700&display=swap");
 * {
   box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   margin: 0; }
 
 .nav-main {
   background-color: #ffff;
+  color: #1445b3;
   height: 75px;
   width: 100%;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
@@ -16,17 +20,20 @@ body {
   align-items: center;
   padding: 20px 80px;
   position: fixed;
-  z-index: 1; }
+  z-index: 2; }
   .nav-main .logo-ada img {
     height: 25px;
     width: 67px; }
   .nav-main .items ul {
     display: flex;
     font-family: “Montserrat”, sans-serif;
-    color: #1445b3;
     list-style: none; }
     .nav-main .items ul li {
       margin-right: 30px; }
+      .nav-main .items ul li a {
+        text-decoration: none;
+        color: #1445b3;
+        transition: all 1s; }
     .nav-main .items ul .menudrop {
       margin: 10px;
       text-decoration: none;
@@ -52,6 +59,7 @@ body {
       margin: 10px 20px; }
     .nav-main #menudrop1 #menudrop2 {
       display: none;
+      width: 200px;
       background-color: #ffff;
       color: #007bff;
       font-family: “Montserrat”, sans-serif;
@@ -59,8 +67,8 @@ body {
       font-size: 13px;
       padding: 5px 5px 0px;
       position: absolute;
-      top: 80px;
-      right: -120px; }
+      top: 70px;
+      left: 100px; }
       .nav-main #menudrop1 #menudrop2 li {
         margin: 10px 20px; }
 
@@ -73,6 +81,9 @@ body {
 #menudrop1:hover {
   display: block; }
 
+.nav-main .menudrop2:hover #menudrop2 {
+  display: block; }
+
 #menu {
   width: 100%;
   height: 100%;
@@ -83,20 +94,31 @@ body {
   position: absolute;
   top: 0;
   left: -100%;
+  z-index: 2;
   transition: 1s all; }
-  #menu ul {
-    list-style: none;
-    line-height: 1.5; }
-    #menu ul li {
-      padding: 10px 20px; }
-  #menu #menudrop3 {
-    display: none; }
-  #menu .cerrar {
-    position: absolute;
-    right: 40px;
-    top: 25px; }
-    #menu .cerrar a {
-      color: #ffff; }
+  #menu .menu-list {
+    width: 40%;
+    height: 100%;
+    padding: 0px;
+    background-color: rgba(19, 39, 57, 0.9); }
+    #menu .menu-list ul {
+      list-style: none;
+      line-height: 1.5; }
+      #menu .menu-list ul li {
+        padding: 10px; }
+        #menu .menu-list ul li a {
+          text-decoration: none;
+          color: #ffff; }
+    #menu .menu-list #menudrop3 {
+      display: none;
+      padding: 0px;
+      z-index: 2; }
+    #menu .menu-list .cerrar {
+      position: absolute;
+      right: 40px;
+      top: 25px; }
+      #menu .menu-list .cerrar a {
+        color: #ffff; }
 
 .intro {
   background-color: #1445b3;
@@ -158,7 +180,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px; }
+  padding: 60px 0px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1); }
   .sec-portfolio .container-portfolio .header-portfolio {
     margin: 25px; }
     .sec-portfolio .container-portfolio .header-portfolio h3 {
@@ -193,6 +216,8 @@ body {
   .sec-portfolio .container-portfolio .images-port {
     width: 100%;
     display: flex;
+    margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
@@ -201,8 +226,10 @@ body {
       height: 250px;
       border-radius: 10px;
       margin: 10px;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
     .sec-portfolio .container-portfolio .images-port img {
+      position: absolute;
       width: 100%;
       height: 100%;
       object-fit: cover; }
@@ -210,37 +237,50 @@ body {
       width: 350px;
       height: 250px;
       color: #ffff;
-      background-color: rgba(19, 39, 57, 0.8);
+      background-color: rgba(19, 39, 57, 0.5);
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      transform: translateY(0px);
-      transition: all 1s; }
+      transform: translateY(250px);
+      z-index: 9; }
       .sec-portfolio .container-portfolio .images-port .port-overflow h4 {
         font-family: “Montserrat”, sans-serif;
         font-size: 22px;
         font-weight: 700;
         padding: 0px;
-        margin: 0px; }
+        margin: 5px;
+        z-index: 1; }
       .sec-portfolio .container-portfolio .images-port .port-overflow p {
         font-family: “Open Sans”, sans-serif;
         font-weight: 500;
         font-size: 14px;
         padding: 0px;
-        margin: 0px; }
+        margin: 15px;
+        z-index: 1; }
       .sec-portfolio .container-portfolio .images-port .port-overflow div .overflow-icon {
-        background-color: #1445b3;
-        width: 15px;
-        height: 15px;
-        padding: 0px;
-        margin: 10px; }
+        background-color: #007bff;
+        color: #ffff;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 50px;
+        padding: 10px;
+        margin: 10px;
+        z-index: 1; }
 
 .sec-portfolio .container-portfolio .list-portfolio ul li:hover {
   background: #007bff;
   color: #ffff; }
 
-.sec-portfolio .container-portfolio .images-port .img-port:hover + .port-overflow {
-  transform: translateY(250); }
+.sec-portfolio .container-portfolio .images-port .img-port:hover .port-overflow {
+  transform: translateY(0);
+  z-index: 99; }
+
+.sec-portfolio .container-portfolio .images-port .img-port .port-overflow h4:hover {
+  color: #007bff; }
+
+.sec-portfolio .container-portfolio .images-port .img-port .port-overflow .overflow-icon:hover {
+  background-color: #3395ff; }
 
 @media (max-width: 620px) and (min-width: 320px) {
   .nav-main {
@@ -259,6 +299,10 @@ body {
         color: #1445b3; }
   #menu:target {
     left: 0px; }
+  #menu ul li a:hover {
+    color: #74b5fc; }
+  #menu ul li .menudrop3:hover + #menudrop3 {
+    display: block; }
   .intro {
     padding: 120px 20px;
     height: 700px;
@@ -312,6 +356,10 @@ body {
         color: #ffff; }
   #menu:target {
     left: 0px; }
+  #menu ul li a:hover {
+    color: #74b5fc; }
+  #menu ul li .menudrop3:hover + #menudrop3 {
+    display: block; }
   .intro {
     padding: 120px 20px;
     height: 800px;
@@ -336,3 +384,10 @@ body {
           background: #007bff;
           border-color: #007bff;
           color: #ffff; } }
+
+@media (max-width: 1040px) and (min-width: 995px) {
+  .sec-portfolio .container-portfolio .images-port {
+    width: 100%;
+    display: flex; }
+    .sec-portfolio .container-portfolio .images-port .img-port {
+      width: 25%; } }

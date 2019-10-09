@@ -46,9 +46,11 @@
   justify-content: center;
   text-align: center;
   height: 100%;
-  transition: 0,3s ease-in-out; }
+  transition: 0, 3s ease-in-out; }
 
-.rec1, .rec2, .rec3 {
+.rec1,
+.rec2,
+.rec3 {
   border: 1px solid rgba(0, 0, 0, 0.125);
   flex-direction: column;
   position: relative;
@@ -74,7 +76,9 @@
   background: #003b7a;
   border-color: #003b7a; }
 
-.rec1-body p, .rec2-body p, .rec3-body p {
+.rec1-body p,
+.rec2-body p,
+.rec3-body p {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   color: #d8eafe; }

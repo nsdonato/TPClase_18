@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:400,700&display=swap');
+@import url('https:onts.googleapis.com/css?family=Montserrat:400,700,900|Open+Sans:400,700&display=swap');
 
 $main_font: “Montserrat”, sans-serif;
 $secondary_font: “Open Sans”, sans-serif;
 $main_color:#1445b3;
 $sec_color:#007bff;
 $color3: #ffff;
+$color4: #74b5fc;
 
 * {
     box-sizing: border-box;
@@ -15,6 +16,9 @@ $color3: #ffff;
     color: $color3;
    
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -22,6 +26,7 @@ body {
 
 .nav-main {
     background-color: $color3;
+    color:$main_color;
     height: 75px;
     width: 100%;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
@@ -30,7 +35,7 @@ body {
     align-items: center;
     padding: 20px 80px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     .logo-ada img {
         height: 25px;
         width: 67px;   
@@ -38,11 +43,14 @@ body {
     .items ul {
         display: flex;
         font-family: $main_font;
-        color: $main_color;
         list-style: none;
         li {
          margin-right: 30px;
-         
+         a {
+           text-decoration: none;
+           color: $main_color;
+           transition: all 1s;
+         }
         }
         .menudrop {
             margin: 10px;
@@ -83,15 +91,16 @@ body {
         
         #menudrop2 {
             display: none;
-            background-color: $color3;
+            width: 200px;
+            background-color:$color3;
             color: $sec_color;
             font-family: $main_font;
             list-style: none;
             font-size: 13px;
             padding: 5px 5px 0px;
             position: absolute;
-            top: 80px;
-            right: -120px;
+            top: 70px;
+            left: 100px;
             
             
             li {
@@ -108,6 +117,7 @@ body {
         
 }
 
+
 .menudrop:hover + #menudrop1 {
     display:block;
 
@@ -115,6 +125,11 @@ body {
 
 #menudrop1:hover {
     display: block;
+}
+
+.nav-main .menudrop2:hover  #menudrop2 { 
+    display: block;
+  
 }
 
 
@@ -128,17 +143,32 @@ body {
     position: absolute;
     top: 0;
     left: -100%;
+    z-index: 2;
     transition: 1s all;
+    .menu-list {
+        width: 40%;
+        height: 100%;
+        padding:0px;
+        background-color:rgba(19, 39, 57, 0.9);
+
+
     ul {
         list-style: none;
         line-height: 1.5;
         li {
-            padding: 10px 20px;
+            padding: 10px;
+            a {
+                text-decoration: none;
+                color: $color3;
+            }
         }
        
     }
     #menudrop3 {
         display: none;
+        padding: 0px;
+        z-index: 2;
+
     }
     .cerrar {
         position: absolute;
@@ -149,8 +179,12 @@ body {
         }
         
     }
+    }
     
 }
+
+
+
 
 .intro {
     background-color: $main_color;
@@ -185,7 +219,7 @@ body {
             color: $color3;
             font-size: 55px;
             font-weight: 700;
-            color: #74b5fc;
+            color: $color4;
             text-decoration: underline;
         }
     }
@@ -231,7 +265,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    padding: 30px;
+    padding: 60px 0px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
     .container-portfolio {
         .header-portfolio {
             margin: 25px;
@@ -278,52 +313,66 @@ body {
         .images-port {
             width: 100%;
             display: flex;
+            margin: 0;
+            padding: 0;
             justify-content: center;
             align-items: center;        
             flex-wrap: wrap;
+
             .img-port {
                 width: 350px;
                 height: 250px;
                 border-radius: 10px;
                 margin: 10px;
                 overflow: hidden;
+                position: relative;
             }
             img {
+                position: absolute;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                       
             }
             .port-overflow {
                 width: 350px;
                 height: 250px;
                 color: $color3;
-                background-color: rgba(19, 39, 57, 0.8);
+                background-color: rgba(19, 39, 57, 0.5);
                 display:flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                transform: translateY(0px);
-                transition: all 1s;
+                transform: translateY(250px);
+                z-index: 9;
+                
                 h4 {
                     font-family: $main_font;
                     font-size: 22px;   
                     font-weight: 700;
                     padding: 0px;
-                    margin: 0px;
+                    margin: 5px;
+                    z-index: 1;
                 }
                 p {
                     font-family: $secondary_font;
                     font-weight: 500;
                     font-size: 14px;
                     padding: 0px;
-                    margin: 0px;
+                    margin: 15px;
+                    z-index: 1;
                 }
                 div {
                     .overflow-icon {
-                        background-color: $main_color;
-                        width: 15px;
-                        height: 15px;
-                        padding: 0px;
+                        background-color: $sec_color;
+                        color: $color3;
+                        font-size: 15px;
+                        text-align: center;
+                        border-radius: 50px;
+                        padding: 10px;
                         margin: 10px;
+                        z-index: 1;                                  
+                        
                     }
                 }
 
@@ -338,10 +387,20 @@ body {
     background: $sec_color;
     color:$color3;
 }
-.sec-portfolio .container-portfolio .images-port .img-port:hover + .port-overflow {
-    transform: translateY(250);
+.sec-portfolio .container-portfolio .images-port .img-port:hover {
+    .port-overflow{
+    transform: translateY(0);
+    z-index: 99;
+}
 }
 
+.sec-portfolio .container-portfolio .images-port .img-port .port-overflow h4:hover {
+    color: $sec_color;
+}
+
+.sec-portfolio .container-portfolio .images-port .img-port .port-overflow .overflow-icon:hover {
+    background-color: #3395ff;
+}
 
 @media (max-width:620px) and (min-width:320px) {
 
@@ -369,6 +428,17 @@ body {
     #menu:target {
     left: 0px;
     }
+    #menu ul li a:hover {
+        color: $color4;
+    }
+    #menu ul li .menudrop3:hover + #menudrop3{
+        display: block;
+                
+    }
+    
+    
+
+
 
     .intro {
         padding: 120px 20px;
@@ -432,7 +502,6 @@ body {
         }
 
     }
-    
     #menu {
         width: 100%;
         height: 800px;
@@ -447,9 +516,21 @@ body {
         }
     }
 
+    
     #menu:target {
     left: 0px;
     }
+    #menu ul li a:hover {
+        color: $color4;
+    }
+    #menu ul li .menudrop3:hover + #menudrop3{
+        display: block;
+                
+    }
+    
+
+    
+    
     
     .intro {
         padding: 120px 20px;
@@ -487,6 +568,20 @@ body {
                             
             }
 
+        }
+    }
+
+    
+}
+
+@media (max-width:1040px) and (min-width:995px) {
+    .sec-portfolio .container-portfolio {
+        .images-port {
+            width: 100%;
+            display:flex;
+            .img-port {
+                width: 25%;
+            }
         }
     }
 }

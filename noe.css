@@ -340,31 +340,31 @@
   width: 20%;
 }
 
-.services .services__container .services__main .services__card .services__img .fas {
-  font-size: 50px;
+.services .services__container .services__main .services__card .services__img .ionic {
+  font-size: 70px;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-chart-pie {
+.services .services__container .services__main .services__card .services__img .ion-ios-analytics-outline {
   color: #ff689b;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-book {
+.services .services__container .services__main .services__card .services__img .ion-ios-bookmarks-outline {
   color: #e9bf06;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-scroll {
+.services .services__container .services__main .services__card .services__img .ion-ios-paper-outline {
   color: #3fcdc7;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-tachometer-alt {
+.services .services__container .services__main .services__card .services__img .ion-ios-speedometer-outline {
   color: #41cf2e;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-globe-americas {
+.services .services__container .services__main .services__card .services__img .ion-ios-world-outline {
   color: #d6ff22;
 }
 
-.services .services__container .services__main .services__card .services__img .fa-clock {
+.services .services__container .services__main .services__card .services__img .ion-ios-clock-outline {
   color: #4680ff;
 }
 
@@ -774,5 +774,38 @@
   .contact-us .contact-us__main .contact-us__main--rigth .contact-us__form .contact-us__container .contact-us__subject {
     margin-top: 20px;
   }
+}
+
+.portfolius_imagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  background-image: url("https://newbiz-master-uqgespkghu.now.sh/img/portfolio/app1.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.portfolius_imagen span.cito {
+  display: none;
+}
+
+.portfolius_imagen:hover span.cito {
+  display: block;
+}
+
+.portfolius_imagen:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 62, 128, 0.7)), to(rgba(0, 62, 128, 0.7))), url("https://newbiz-master-uqgespkghu.now.sh/img/portfolio/app1.jpg");
+  background-image: linear-gradient(rgba(0, 62, 128, 0.7), rgba(0, 62, 128, 0.7)), url("https://newbiz-master-uqgespkghu.now.sh/img/portfolio/app1.jpg");
 }
 /*# sourceMappingURL=noe.css.map */
