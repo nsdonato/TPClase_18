@@ -54,7 +54,7 @@ body {
 
 .header-testimonials {
     @include justify-content-center;
-
+    
     h3 {
         @include main-title-testimonials-ourclients;
         margin-top: 0;
