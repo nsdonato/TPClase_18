@@ -190,14 +190,15 @@ $secondary-font: "Open Sans", sans-serif;
 
 .rowteam {
     display: flex;
-    flex-wrap: wrap;
+   flex-direction: column;
+  //  flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
     .bat1, .bat2, .bat3, .bat4 {
     padding-right: 15px;
     padding-left: 15px;
     flex: 0 0 25%;
-    max-width: 25%;
+  
     h4 {
     font-weight: 700;
     margin-bottom: 2px;
@@ -275,4 +276,22 @@ $secondary-font: "Open Sans", sans-serif;
     color: #fff;
     transition: none;
     }
+}
+
+
+// <!------ MEDIAQUERIES ------>
+
+@media (min-width: 320px) and (max-width: 539px) {
+.rowteam {
+display: flex;
+flex-direction: column;
+margin: 0;
+}
+.member {
+  width: 100%;
+}
+.contadores {
+  display: flex;
+  flex-direction: column;
+} 
 }
