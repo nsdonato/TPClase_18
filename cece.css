@@ -228,7 +228,8 @@
 
 .social-team a {
   color: #fff;
-  transition: none; }
+  transition: none;
+  text-decoration: none; }
 
 @media (min-width: 320px) and (max-width: 539px) {
   .rowteam {
