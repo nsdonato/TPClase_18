@@ -59,7 +59,7 @@ body {
       margin: 10px 20px;
       padding: 5px; }
     .nav-main #menudrop1 #menudrop2 {
-      display: none;
+      display: block;
       width: 200px;
       background-color: #ffff;
       color: #007bff;
@@ -69,8 +69,9 @@ body {
       padding: 5px 5px 0px;
       position: absolute;
       top: 70px;
-      left: 110px;
-      z-index: 2; }
+      left: 113px;
+      visibility: hidden;
+      opacity: 0; }
       .nav-main #menudrop1 #menudrop2 li {
         margin: 10px 20px; }
 
@@ -83,11 +84,13 @@ body {
 #menudrop1:hover {
   display: block; }
 
-#menudrop2:hover {
-  display: block; }
-
 .nav-main .menudrop2:hover + #menudrop2 {
-  display: block; }
+  visibility: visible;
+  opacity: 1; }
+
+#menudrop2:hover {
+  visibility: visible;
+  opacity: 1; }
 
 #menu {
   width: 100%;
