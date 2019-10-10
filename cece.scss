@@ -190,14 +190,13 @@ $secondary-font: "Open Sans", sans-serif;
 
 .rowteam {
     display: flex;
-   flex-direction: column;
-  //  flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
     .bat1, .bat2, .bat3, .bat4 {
     padding-right: 15px;
     padding-left: 15px;
-    flex: 0 0 25%;
+    width: 25%;
   
     h4 {
     font-weight: 700;
@@ -282,17 +281,31 @@ $secondary-font: "Open Sans", sans-serif;
 
 // <!------ MEDIAQUERIES ------>
 
-@media (min-width: 320px) and (max-width: 539px) {
-.rowteam {
-display: flex;
-flex-direction: column;
-margin: 0;
+@media (min-width: 320px) and (max-width: 770px){
+    
+  .rowteam {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 0px;
+     .bat1, .bat2, .bat3, .bat4 {
+     width: 90%;
+     }
+  }
+
+
+
 }
-.member {
-  width: 100%;
-}
-.contadores {
-  display: flex;
-  flex-direction: column;
-} 
+
+@media (min-width:780px) and (max-width:990px) {
+  .rowteam {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .bat1, .bat2, .bat3, .bat4 {
+       width: 35%;
+      }
+
+  }
 }
