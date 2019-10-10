@@ -91,8 +91,8 @@ body {
         } 
         
         #menudrop2 {
-            display: block;
-            width: 200px;
+            display: none;
+            width: 150px;
             background-color: $color3;
             color: $sec_color;
             font-family: $main_font;
@@ -102,18 +102,17 @@ body {
             position: absolute;
             top: 70px;
             left: 113px;
-            visibility: hidden;
-            opacity: 0;
-            li {
+             li {
                 margin: 10px 20px;
             } 
-            #menudrop2:hover {
-                display: block;
-            }
-            
-            .menudrop2:hover + #menudrop2{ 
-                display: block;
-            }
+           
+        }
+        #menudrop2:hover {
+            display: block;
+        }
+        
+        .menudrop2:hover + #menudrop2{ 
+            display: block;
         }
     }
     

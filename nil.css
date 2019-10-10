@@ -59,8 +59,8 @@ body {
       margin: 10px 20px;
       padding: 5px; }
     .nav-main #menudrop1 #menudrop2 {
-      display: block;
-      width: 200px;
+      display: none;
+      width: 150px;
       background-color: #ffff;
       color: #007bff;
       font-family: “Montserrat”, sans-serif;
@@ -69,15 +69,13 @@ body {
       padding: 5px 5px 0px;
       position: absolute;
       top: 70px;
-      left: 113px;
-      visibility: hidden;
-      opacity: 0; }
+      left: 113px; }
       .nav-main #menudrop1 #menudrop2 li {
         margin: 10px 20px; }
-      .nav-main #menudrop1 #menudrop2 #menudrop2:hover {
-        display: block; }
-      .nav-main #menudrop1 #menudrop2 .menudrop2:hover + #menudrop2 {
-        display: block; }
+    .nav-main #menudrop1 #menudrop2:hover {
+      display: block; }
+    .nav-main #menudrop1 .menudrop2:hover + #menudrop2 {
+      display: block; }
 
 .nav-main .items li a:hover {
   color: #007bff; }
