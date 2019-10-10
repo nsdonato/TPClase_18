@@ -576,7 +576,14 @@ body {
 
         }
     }
-
+    .sec-portfolio .container-portfolio {
+        .images-port {
+            width: 100%;
+            display:flex;
+            justify-content: flex-start;
+            margin: 0px 25px;
+        }
+    }
     
 }
 
