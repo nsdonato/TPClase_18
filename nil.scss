@@ -107,7 +107,13 @@ body {
             li {
                 margin: 10px 20px;
             } 
-           
+            #menudrop2:hover {
+                display: block;
+            }
+            
+            .menudrop2:hover + #menudrop2{ 
+                display: block;
+            }
         }
     }
     
@@ -128,17 +134,6 @@ body {
 #menudrop1:hover {
     display: block;
 }
-
-.nav-main .menudrop2:hover + #menudrop2 { 
-    visibility: visible;
-    opacity: 1;
-}
-#menudrop2:hover {
-    visibility: visible;
-    opacity: 1;
-}
-
-
 
 
 #menu {
