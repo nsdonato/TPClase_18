@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: #004a99;
+  color: #fff;
+  display: flex;
+  flex-direction: column; }
+  footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s; }
+  footer i {
+    color: #fff; }
+  footer p,
+  footer h4 {
+    margin: 0;
+    padding: 0; }
+  footer .bold {
+    font-weight: bold; }
+
+.footer_principal_container {
+  padding: 50px; }
+  .footer_principal_container .row {
+    display: flex;
+    justify-content: space-between; }
+    .footer_principal_container .row .wayne {
+      padding-right: 30px; }
+      .footer_principal_container .row .wayne .header_wayne {
+        font-size: 34px;
+        margin-bottom: 5px; }
+        .footer_principal_container .row .wayne .header_wayne p {
+          margin-bottom: 25px; }
+    .footer_principal_container .row .newsletter p {
+      line-height: 20px; }
+    .footer_principal_container .row .useful {
+      align-items: center; }
+      .footer_principal_container .row .useful ul {
+        display: flex;
+        flex-direction: column;
+        line-height: 35px;
+        padding: 0px;
+        margin-top: 10px;
+        list-style: none; }
+      .footer_principal_container .row .useful ul a:hover {
+        color: #74b5fc; }
+    .footer_principal_container .row .contact_us_footer {
+      line-height: 25px;
+      color: #ffffff; }
+      .footer_principal_container .row .contact_us_footer .contact_info {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px; }
+      .footer_principal_container .row .contact_us_footer .contact_icons {
+        display: flex;
+        margin-top: 15px; }
+        .footer_principal_container .row .contact_us_footer .contact_icons a {
+          border-radius: 50%;
+          background: #007bff;
+          width: 36px;
+          height: 36px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 3px;
+          transition: all 1s; }
+        .footer_principal_container .row .contact_us_footer .contact_icons a:hover {
+          background-color: #0067d5; }
+    .footer_principal_container .row .subscribe {
+      display: flex;
+      height: 34px;
+      margin-top: 30px; }
+      .footer_principal_container .row .subscribe input[type="email"] {
+        width: 100%;
+        height: auto;
+        border: none; }
+      .footer_principal_container .row .subscribe input[type="submit"] {
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        width: 130px;
+        height: auto;
+        transition: all 0.5s;
+        font-family: inherit; }
+      .footer_principal_container .row .subscribe input[type="submit"]:hover {
+        background-color: #0067d5; }
+
+.useful,
+.wayne,
+.contact_us_footer,
+.newsletter {
+  width: 25%;
+  flex-grow: 1;
+  flex-shrink: 1; }
+
+.useful h4,
+.wayne h4,
+.contact_us_footer h4,
+.newsletter h4,
+h4 > .contact_info,
+.newsletter > p {
+  margin-bottom: 15px; }
+
+.footer_secundario {
+  background-color: #00428a;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  padding: 20px; }
+  .footer_secundario div p {
+    margin: 5px; }
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: #007bff;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  text-decoration: none; }
+
+@media (max-width: 990px) {
+  .row {
+    flex-wrap: wrap; }
+    .row .contact_us_footer,
+    .row .wayne {
+      margin-right: 20px; }
+    .row .useful,
+    .row .wayne,
+    .row .contact_us,
+    .row .newsletter {
+      margin-bottom: 10px; }
+    .row .wayne {
+      padding: 0;
+      margin-right: 0; }
+      .row .wayne .header_wayne {
+        margin-bottom: 10px; }
+      .row .wayne .p-wayne {
+        font-size: 13px;
+        line-height: 24px; }
+  .useful,
+  .wayne {
+    width: 45%; } }
+
+@media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px; }
+    .row .useful,
+    .row .wayne,
+    .row .contact_us_footer,
+    .row .newsletter {
+      width: 100%;
+      margin-bottom: 40px;
+      padding: 5px; } }
+
+@media (max-width: 775px) {
+  .footer_principal_container {
+    padding: 50px; } }
+
+@media (max-width: 575px) {
+  .footer_principal_container {
+    padding: 50px 10px; } }
