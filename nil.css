@@ -388,12 +388,7 @@ body {
         .intro .container1 .link1 .botonget {
           background: #007bff;
           border-color: #007bff;
-          color: #ffff; }
-  .sec-portfolio .container-portfolio .images-port {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    margin: 0px 25px; } }
+          color: #ffff; } }
 
 @media (max-width: 1040px) and (min-width: 995px) {
   .sec-portfolio .container-portfolio .images-port {
