@@ -282,6 +282,31 @@ $secondary-font: "Open Sans", sans-serif;
 // <!------ MEDIAQUERIES ------>
 
 @media (min-width: 320px) and (max-width: 770px){
+
+  .columnas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .rec1, .rec2, .rec3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        width: 80%;
+    }
+  }
+    .contadores {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .contador1, .contador2, .contador3, .contador4 {
+            width: 35%;
+            margin: 0px 10px;
+        }
+    }
     
   .rowteam {
      display: flex;

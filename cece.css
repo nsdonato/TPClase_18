@@ -232,6 +232,26 @@
   text-decoration: none; }
 
 @media (min-width: 320px) and (max-width: 770px) {
+  .columnas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .columnas .rec1, .columnas .rec2, .columnas .rec3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+      width: 80%; }
+  .contadores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .contadores .contador1, .contadores .contador2, .contadores .contador3, .contadores .contador4 {
+      width: 35%;
+      margin: 0px 10px; }
   .rowteam {
     display: flex;
     flex-direction: column;
