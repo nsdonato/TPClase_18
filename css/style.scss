@@ -1,3 +1,24 @@
+// - Excelente trabajo en general. Las felicito especialmente por la atencion al detalle en resoluciones moviles, 
+// no debe haber sido facil lograr que todo quede tan prolijo. 
+// - Buen uso de variables y de imports en scss. 
+// - El maquetado esta impecable, asi como las animaciones, etc. Todo lo que se ve esta perfecto.  
+
+// - Mucha atencion a los textos alt en imagenes, son realmente vitales para que nuestra pagina sea accesible. 
+// - Los nombres de clases a veces son excelentes, descriptivos y claros (about-us__header), otras veces... no tanto. 
+// Entiendo que es una consecuencia de trabajar en grupo que las cosas no siempre queden consistentes,
+// pero se habria apreciado mas consistencia en este caso. 
+// - Hay muchisimas mas media queries que las necesarias. Algunas se repiten, otras podrian unirse. Se hace muy
+// dificil ver un cambio en una resolucion puntual o corregir algo. No deberian haber sido mas de tres, cuatro solo para arreglar algo
+// muy puntual. Da la impresion de que cada una de ustedes hizo "su" media query y luego simplemente las agruparon una debajo 
+// de la otra - una decision que si bien hoy para el TP solo molesta a su profesora, tendria consecuencias muy molestas si en 
+// seis meses tienen que volver uds a este codigo para arreglar una cosa que sera muy dificil de encontrar. 
+// Habria sido recomendable que se tomaran el trabajo de unificar el codigo de cada una con mas consistencia. 
+// - En general me da la impresion de que le dieron mas importancia a como se veia finalmente la pagina que al codigo. 
+// Con el escaso tiempo que tuvieron, entiendo que muchas veces es inevitable hacer ciertas soluciones "a las apuradas". 
+// Pero las animo a que lean mis comentarios y traten de incorporarlos en futuros desarrollos. Es muy importante para poder
+// trabajar con otros desarrolladores que nuestro codigo sea prolijo y comprensible. 
+
+
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700&display=swap");
 
 @import "variables";
@@ -92,6 +113,11 @@ body {
         margin: 10px 20px;
       }
     }
+
+
+    // como la propiedad display no es animable, en este caso los menus aparecen de manera algo brusca
+    // Una alternativa seria usar visibility: hidden y opacity: 0 para ocultarlos, que si son animables. 
+ 
     #menudrop2:hover {
       display: block;
     }
@@ -129,6 +155,8 @@ body {
   .menu-list {
     width: 40%;
     height: 100%;
+
+    // se prefiere escribir solo 0 en lugar de 0px
     padding: 0px;
     background-color: rgba(19, 39, 57, 0.9);
     ul {
@@ -166,9 +194,12 @@ body {
 .intro {
   background-color: $main_color;
   font-family: $primary_font;
+  // preferimos no darle un alto fijo a las secciones, ya que si agregamos texto o cualquier contenido, este rebalsa su contenedor
+  // Privilegien darle la altura deseada a las secciones mediante paddings, margins y contenido. 
   height: 600px;
   padding: 40px 80px;
   display: flex;
+  // buen uso de row reverse aca 
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
@@ -177,6 +208,8 @@ body {
     width: 50%;
     height: auto;
     vertical-align: top;
+
+    // este es buen lugar para poner un mixin! si existe, usenlo
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,6 +233,14 @@ body {
   }
 
   .link1 {
+     // me costó darme cuenta de que este era el estilado de los botones. 
+    // mas alla del comentario en html, que deberian haber usado el elemento button porque es semanticamente mas correcto, 
+    // existendo nombre de clases mas claro - botonget y botonour - es preferible usar eso que "a" a secas. 
+
+    // Por otro lado, noten que esta decision lleva a que los dos botones se vean exactamete iguales en desktop, 
+    // cuando en el modelo son diferentes y se igualan solo en el hover a uno. 
+
+    // Este error no ocurre en la media query, y justamente porque ahi se refieren a ellos con su nombre de clase 
     a {
       @include decotex;
       text-decoration: none;
@@ -228,6 +269,8 @@ body {
     width: 100%;
   }
 }
+// es buena idea que nuestro estilo siga el mismo orden que el html, asi es mucho mas sencillo encontrar los elementos
+// en este caso, pasamos de intro a portfolio, y la seccion about us queda despues. 
 
 .sec-portfolio {
   background-color: $fourth_color;
@@ -273,6 +316,9 @@ body {
       }
     }
     .images-port {
+
+      // este width del 100% es innecesario, asi como el margin 0 que ya tienen todos los elementos por haber sido
+      // indicado mas arriba con el selector universal *
       width: 100%;
       @include flex_wrap_jcenter_aicenter;
       margin: 0;
@@ -331,6 +377,9 @@ body {
     }
   }
 }
+// Los proximos cuatro selectores son muy confusos. Si estamos usando sass, no tiene sentido escribir todos
+// los nombres de clases cuando podemos anidarlos - mucho menos teniendo la anidacion mas arriba. 
+// Esto ademas hace que encontrar el estilo que queremos sea muchisimo mas dificil. 
 
 .sec-portfolio .container-portfolio .list-portfolio ul li:hover {
   background: $secondary_color;
@@ -432,6 +481,10 @@ body {
           }
         }
       }
+
+      // se repite muchisimo codigo en las secciones uno, dos y tres - un selector para los tres seria preferible
+      // recuerden la regla DRY: don't repeat yourself! Si despues queremos que el width sea de 40% en lugar de 45, deberemos
+      // arreglarlo en cinco lugares distintos. 
       .about-us__first-section--rigth {
         margin-left: 10px;
         width: 45%;
@@ -508,6 +561,8 @@ body {
         margin-bottom: 20px;
       }
       p {
+        // el width de 50% de esta p nunca se corrige en movil, lo que hace que se vea bastante mas 
+        // angosta que en el modelo en resoluciones bajas. 
         @include secondary_font_secondary_color;
         font-size: 15px;
         width: 50%;
@@ -587,6 +642,7 @@ body {
   }
 }
 
+// vuelvo a insistir con la importancia del orden de las secciones. 
 .contact-us {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 60px 0;
@@ -787,6 +843,7 @@ body {
 
   h3 {
     @include main-title-testimonials-ourclients;
+    // innecesario ya que lo tiene el selector universal
     margin: 0;
   }
 
@@ -841,21 +898,29 @@ body {
 
 /*---------- WHY US ----------*/
 
+// Toda esta seccion esta compuesta de selectores sueltos, o a lo sumo que anidan a un elemento pequeño. 
+// Habria sido buena idea englobarlos a todos en el html en un tag section y tambien anidarlos a todos aqui. 
+// Varios nombres son muy generales ("container", "img fluid") y seria muy facil pisarlos por error con
+// otro selector. Anidarlos en un tag con un nombre relevante a la seccion lo haria mucho mas improbable. 
+
 .container {
   background-color: #004a99;
   color: $fourth_color;
   font-family: $primary_font;
   text-align: center;
   position: relative;
+  // es innecesario width 100%
   width: 100%;
-  padding-left: 15px;
+
+  
+  padding-left: 15px;   // este padding se elimina con el padding posterior
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 0;
+  padding: 60px 0;   // este padding elimina los dos de mas arriba
 }
 
-#why_us {
+#why_us { // no existe en el html un elemento con este id. 
   width: 100%;
   display: flex;
 }
@@ -867,7 +932,7 @@ body {
     text-align: center;
     margin: auto;
     font-size: 15px;
-    width: 50%;
+    width: 50%; // este width del 50% se mantiene en movil y hace que la p se vea mucho mas angosta que en el modelo
   }
   h3 {
     font-size: 36px;
@@ -916,6 +981,12 @@ body {
   height: 317px;
 }
 
+
+// tambien podriamos decir
+// .rec1:hover, .rec2:hover, .rec3:hover {
+//   background: #003b7a;
+//   border-color: #003b7a;
+// }
 .rec1:hover {
   background: #003b7a;
   border-color: #003b7a;
@@ -939,6 +1010,13 @@ body {
   color: #d8eafe;
 }
 
+
+// Los tamaños a continuacion tienen medidas dificiles de entender
+// Y por lo que veo, no cambia mucho si directamente los borramos. 
+// Quiza haya algun motivo por el que los pusieron que yo no estoy viendo 
+// - pero no termino de entender la necesidad. 
+// Recuerden, mientras menos height y width le demos a las cosas, mejor:
+// asi lograran ajustarse mejor a un nuevo contenido si eventualmente este cambia. 
 .rec1-body {
   width: 257.98px;
   height: 222px;
@@ -992,6 +1070,12 @@ body {
   }
 }
 
+// Nuevamente, habria sido bueno aprovechar bien el poder de scss
+// y Anidar selectores en esta seccion, asi todos caian dentro del rango de #team. 
+
+// Tengo  que aclarar que si bien el scss esta un poco confuso, la seccion quedo fantastica. 
+
+
 #team {
   background: $fourth_color;
   padding: 60px 0;
@@ -1019,6 +1103,10 @@ body {
     position: relative;
   }
   p {
+    // este p no tiene font family, por lo que al menos en mi pc se ve en Times New Roman. 
+    // Una buena idea es siempre ponerle font family al body. Asi, si en alguna seccion
+    // nos la olvidamos, sabemos que se va a heredar la que le hayamos puesto alli. 
+    // Que quiza no sea la que queriamos, pero es mejor que la que pone el navegador por defecto!
     text-align: center;
     margin: auto;
     font-size: 15px;
@@ -1144,6 +1232,8 @@ footer {
   }
 }
 
+// Este selector deberia tambien estar aninado dentro de footer
+
 .footer_principal_container {
   padding: 50px;
   .row {
@@ -1166,6 +1256,8 @@ footer {
       }
     }
     .useful {
+      // este elemento no tiene display flex
+      // asi que no puede alinear sus elementos al centro 
       align-items: center;
       ul {
         @include flex_column;
@@ -1273,6 +1365,9 @@ h4 > .contact_info,
 /**/
 
 /* CONTACT_US | SERVICES | ABOUT_US */
+
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .about-us {
     .about-us__container {
@@ -1300,6 +1395,15 @@ h4 > .contact_info,
         margin-bottom: 50px;
         p {
           width: 100%;
+       // noten que este estilo nunca llega a aplicarse. 
+      // No insisti mucho en este tema en clase, y fue un error mio. 
+      // Un selector mas especifico le gana a uno menos especifico, incluso dentro de una media query. 
+      // En el desktop, el estilo de la p esta determinado por las siguientes clases
+      // .about-us .about-us__container .about-us__header .about-us__header--small 
+      // En esta media query, en cambio, el estilo se compila asi:
+      // .about-us .about-us__container header p 
+      // La primera es mucho mas especifica que esta, por lo tanto es esa la que se aplica. 
+      // Resultado: nuestra p queda del 50% en movil
         }
       }
       .about-us__first-section {
@@ -1460,6 +1564,7 @@ h4 > .contact_info,
 /**/
 
 /* NAV - MAIN - PORTFOLIO */
+// esto deberia ser max-width 620px sin referencia a tamaño minimo
 @media (max-width: 620px) and (min-width: 320px) {
   .nav-main {
     padding: 20px;
@@ -1545,7 +1650,7 @@ h4 > .contact_info,
     }
   }
   #menu {
-    width: 100%;
+    width: 100%; // esta indicacion es innecesaria ya que el width de 100% se hereda de desktop
     height: 800px;
     .cerrar {
       display: block;
@@ -1584,6 +1689,8 @@ h4 > .contact_info,
 
       .titulo1 {
         h2 {
+       // aqui hay un error de tipeo, lo que hace que la tipografia se vea de tamaños distintos en el span y h2 en tablet
+
           font-size: 42x;
         }
         span {
@@ -1715,6 +1822,9 @@ h4 > .contact_info,
 
 /*---- WHY US ----*/
 
+
+// si bien no hay modelos de celulares menores a 320px, es extraño dejar estilo solo en medidas mayores a 320 cuando podriamos directamente
+// decir max-width 770px. Nos da la ventaja de que el estilo no se rompe por completo de 319px para abajo - hagan la prueba de verlo. 
 @media (min-width: 320px) and (max-width: 770px) {
   .columnas {
     @include flex_column_jcenter_aicenter;

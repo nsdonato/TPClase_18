@@ -71,6 +71,8 @@
   </div>
 
   <section id="home" class="intro">
+    <!-- Recuerden que el alt de las imagenes es lo que lee un lector de pantalla para todas las personas que no pueden ver nuestro sitio. 
+    Debe ser descriptivo y completo. "Imgintro" ni siquiera puede ser leido, confundiriamos mucho a la persona que accede a nuestra web -->
     <div class="imgintro"><img src="images/intro-img.svg" alt="imgintro"></div>
     <div class="container1">
       <div class="titulo1">
@@ -79,6 +81,8 @@
         <h2> for your business!</h2>
       </div>
       <div class="link1">
+        <!-- estos son botones - se ven como botones, cumplen la funcion de botones y uds los llaman botones. 
+        no es buena decision usar elementos <a> existendo uno semanticamente mas adecuado -->
         <a class="botonget" href="#">Get started</a>
         <a class="botonour" href="#">Our Services</a>
       </div>
@@ -162,6 +166,7 @@
       </section>
       <section class="about-us__second-section">
         <div class="about-us__second-section--left">
+          <!-- Este alt tiene una estructura mucho mejor pero no se aplica a la imagen en cuestion -->
           <img src="./images/about/about-extra-1.svg" alt="Imagen ilustrada de un grupo de personas y un perrito" />
         </div>
         <div class="about-us__second-section--rigth">
@@ -300,6 +305,8 @@
     </div>
   </section>
 
+  <!-- No entiendo la decision de hacer que esta seccion no tenga un tag de section. El nombre container es poco claro.
+  Ustedes mismas la llaman "why us" para identificarla en el scss, asi que deberia tener un nombre en ese sentido  -->
   <div class="container">
     <header class="header-section">
       <h3>Why choose us?</h3>
@@ -374,6 +381,9 @@
       <div class="images-port">
         <div class="img-port">
           <img src="images/portfolio/app1.jpg" alt="app1">
+
+          <!-- Asumo que quisieron decir "overlay". Overflow es otra cosa, es cuando un elemento rebalsa su contenedor.
+          Me costo darme cuenta a primera vista a que se referian - otro motivo por el cual es importante hacer buenos nombres de clases  -->
           <div class="port-overflow">
             <h4>App 1</h4>
             <p>APP</p>
@@ -383,6 +393,10 @@
             </div>
           </div>
         </div>
+        <!-- 
+        su alt: web3
+        yo: ಠ_ಠ 
+      -->
         <div class="img-port"><img src="images/portfolio/web3.jpg" alt="web3">
           <div class="port-overflow">
             <h4>Web 3</h4>
@@ -515,6 +529,7 @@
       <div class="rowteam">
         <div class="bat1">
           <div class="member">
+
             <img src="images/team/team-01.jpg" class="img-fluid">
             <div class="member-info">
               <div class="member-info-content">
@@ -814,6 +829,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- Esto deberia ser un button, no un a -->
   <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
 
 </body>
